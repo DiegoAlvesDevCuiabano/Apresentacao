@@ -744,14 +744,14 @@ body{font-family:'Segoe UI',Arial,sans-serif;background:var(--gray-50);color:var
 
     <div class="header-title">
       <strong>Programa P3.2 — Evolução do FIPLAN</strong>
-      Status Report Executivo — Maio de 2026
+      Status Report Executivo — Julho de 2026
     </div>
 
     <nav class="header-nav">
       <a href="#kpis">Visão Geral</a>
       <a href="#semaforo-programa">Semáforo</a>
       <a href="#cronograma">Cronograma</a>
-      <a href="#oportunidades">Oportunidades</a>
+      <a href="#mitigacao">Plano de Mitigação</a>
     </nav>
   </div>
 </header>
@@ -765,7 +765,7 @@ body{font-family:'Segoe UI',Arial,sans-serif;background:var(--gray-50);color:var
     </div>
     <div class="kpi-card">
       <span class="kpi-num" id="kn2">0</span>
-      <div class="kpi-label">Em Execução<br><span style="font-size:11px;opacity:.7">Onda 1 (3 Hom) — Onda 2 (6 Dev)</span></div>
+      <div class="kpi-label">Em Execução<br><span style="font-size:11px;opacity:.7">Onda 1 (2 Hom) — Onda 2 (7 Dev)</span></div>
     </div>
     <div class="kpi-card">
       <span class="kpi-num" id="kn3">0</span>
@@ -783,28 +783,28 @@ body{font-family:'Segoe UI',Arial,sans-serif;background:var(--gray-50);color:var
   <div class="ps-container">
     <div class="ps-header">
       <div class="ps-title-block">
-        <div class="ps-title">Semáforo do Programa — Maio/2026</div>
+        <div class="ps-title">Semáforo do Programa — Julho/2026</div>
         <div class="ps-title-sub">Visão consolidada — status geral</div>
       </div>
-      <div class="ps-light green" title="Execução física e financeira aderentes ao plano; riscos identificados sob gestão ativa">
+      <div class="ps-light yellow" title="Programa com atraso leve na execução física; ações de recuperação em andamento sob gestão ativa">
         <span class="ps-dot"></span>
         <div class="ps-light-body">
-          <span class="ps-light-label">No Prazo</span>
-          <span class="ps-light-sub">Físico e financeiro aderentes ao plano — riscos sob gestão ativa</span>
+          <span class="ps-light-label">Atenção — leve atraso</span>
+          <span class="ps-light-sub">Execução física em recuperação — financeiro aderente, riscos sob gestão ativa</span>
         </div>
       </div>
     </div>
 
     <div class="ps-metrics" style="grid-template-columns:repeat(5,1fr)">
       <!-- Físico -->
-      <div class="ps-metric green">
+      <div class="ps-metric yellow">
         <div class="ps-metric-head">
           <span class="ps-metric-label">Físico</span>
-          <span class="ps-metric-pill green">Acima do plano</span>
+          <span class="ps-metric-pill yellow">Ligeiro atraso</span>
         </div>
         <div class="ps-metric-desc">
-          <strong>Onda 1: 85%</strong> realizado (previsto 75%) — <strong>+10 p.p.</strong> — iniciando homologação jun/26.
-          <strong>Onda 2: 30%</strong> realizado (previsto 25%) — <strong>+5 p.p.</strong> — 6 SPs em desenvolvimento. Repactuação aprovada: encerramento mai/27.
+          <strong>Onda 1: 95%</strong> realizado (previsto 100%) — <strong>−5 p.p.</strong> — em homologação jul–ago/26.
+          <strong>Onda 2: 65%</strong> realizado (previsto 75%) — <strong>−10 p.p.</strong> — 7 SPs em desenvolvimento. Repactuação vigente: encerramento mai/27.
         </div>
       </div>
 
@@ -815,44 +815,42 @@ body{font-family:'Segoe UI',Arial,sans-serif;background:var(--gray-50);color:var
           <span class="ps-metric-pill green">Aderente</span>
         </div>
         <div class="ps-metric-desc">
-          Ondas 1+2 dimensionadas pelos JSONs: <strong>R$ 3,21M</strong> — frente a R$ 5,44M estimados inicialmente.
-          Saldo técnico ampliado para <strong>R$ 2,42M (15%)</strong> do escopo EloGroup.
+          Ondas 1+2 dimensionadas pelos JSONs: <strong>R$ 4,32M</strong> — frente a R$ 5,44M estimados inicialmente.
+          Saldo técnico disponível: <strong>R$ 1,32M (8,1%)</strong> do escopo EloGroup.
         </div>
       </div>
 
-      <!-- Risco contratual -->
-      <div class="ps-metric red">
-        <div class="ps-metric-head">
-          <span class="ps-metric-label">Risco SIAG-C</span>
-          <span class="ps-metric-pill red">Crítico</span>
-        </div>
-        <div class="ps-metric-desc red">
-          <strong>Bloqueadores CRÍTICOS</strong> no SP05 (SIAG-C) sob responsabilidade da
-          <strong>SEPLAG-MT / AZ Informática</strong>: contrato de API, ambiente de homologação,
-          autenticação M2M e idempotência. <em>Escalada formal pendente.</em>
-        </div>
-      </div>
-
-      <!-- SP07 NLP escopo -->
+      <!-- Infraestrutura de homologação -->
       <div class="ps-metric yellow">
         <div class="ps-metric-head">
-          <span class="ps-metric-label">SP07 — Escopo NLP</span>
-          <span class="ps-metric-pill yellow">2 mudanças mai/26</span>
+          <span class="ps-metric-label">Infra de Homologação</span>
+          <span class="ps-metric-pill yellow">Em mitigação</span>
         </div>
         <div class="ps-metric-desc">
-          ① <strong>Credor S/ Fins Lucrativos:</strong> indicador calculado pelo FIPLAN via natureza jurídica (código <code style="font-size:10px;background:#EEF2F7;padding:1px 3px;border-radius:2px">3</code>) — CNPJ inexistente bloqueia SISPAT.<br>
-          ② <strong>Baixa Consumo:</strong> NLP de estoque sem CCC por elemento/subelemento — VPD ausente bloqueia processamento. Vigência: 2027.
+          <strong>Indefinição da infraestrutura para homologação:</strong> os subprojetos da Onda 1 ficaram parados aguardando homologação por não haver ambiente disponível.
+          <strong>Mitigação:</strong> homologação local na máquina — homologações marcadas e em andamento (<strong>SISPAT</strong> e <strong>Sol. e Autorizações</strong>).
+        </div>
+      </div>
+
+      <!-- Escopo de negócio Onda 2 -->
+      <div class="ps-metric yellow">
+        <div class="ps-metric-head">
+          <span class="ps-metric-label">Escopo de Negócio — Onda 2</span>
+          <span class="ps-metric-pill yellow">Em definição</span>
+        </div>
+        <div class="ps-metric-desc">
+          <strong>Indefinição do escopo de negócio dos subprojetos da Onda 2:</strong> demora na consolidação dos requisitos e na liberação para desenvolvimento, atrasando o início efetivo das sprints dos SPs da onda.
         </div>
       </div>
 
       <!-- Parceria MTI-EloGroup -->
-      <div class="ps-metric green">
+      <div class="ps-metric yellow">
         <div class="ps-metric-head">
           <span class="ps-metric-label">Parceria MTI — EloGroup</span>
-          <span class="ps-metric-pill green">Concluído</span>
+          <span class="ps-metric-pill yellow">Em tratativa</span>
         </div>
         <div class="ps-metric-desc">
-          <strong>Ajustes de parceria MTI — EloGroup finalizados.</strong> Alinhamento concluído — programa liberado para <strong>abertura das Ordens de Serviço</strong> e início das etapas de desenvolvimento.
+          <strong>Envio dos primeiros materiais de entrega</strong> em andamento, com <strong>indefinição da precificação, serviços e escopo comercial</strong>. Esforço do time direcionado à resolução dessas tratativas — <strong>menor disponibilidade para desenvolvimento</strong> no período.
         </div>
       </div>
 
@@ -869,24 +867,24 @@ body{font-family:'Segoe UI',Arial,sans-serif;background:var(--gray-50);color:var
     <div class="status-strip-metric">
       <div class="status-strip-label">Subprojetos iniciados</div>
       <div class="status-strip-value">9 <span style="font-size:14px;font-weight:600;color:rgba(255,255,255,.5)">de 24</span></div>
-      <div class="status-strip-sub">Onda 1 (3 Hom) — Onda 2 (6 Dev)</div>
+      <div class="status-strip-sub">Onda 1 (2 Hom) — Onda 2 (7 Dev)</div>
     </div>
     <div class="status-strip-metric">
-      <div class="status-strip-label">Avanço físico geral</div><div style="font-size:9.5px;color:rgba(255,255,255,.4);margin-bottom:2px">Onda 1: 85% — Onda 2: 30% — 24 SPs</div>
-      <div class="status-strip-value">18%</div>
-      <div class="status-prog-wrap"><div class="status-prog-fill" style="width:18%"></div></div>
+      <div class="status-strip-label">Avanço físico geral</div><div style="font-size:9.5px;color:rgba(255,255,255,.4);margin-bottom:2px">Onda 1: 95% — Onda 2: 65% — 24 SPs</div>
+      <div class="status-strip-value">22%</div>
+      <div class="status-prog-wrap"><div class="status-prog-fill" style="width:22%"></div></div>
     </div>
     <div class="status-strip-metric">
       <div class="status-strip-label">Próxima entrega prevista</div>
       <div class="status-strip-value" style="font-size:15px">Homologação</div>
-      <div class="status-strip-sub">SP05 · SP07 · SP33 — Homologação jul/2026</div>
+      <div class="status-strip-sub">SP07 · SP33 — Homologação jul/2026</div>
     </div>
     <div class="status-strip-metric" style="border-right:none">
       <div class="status-strip-label">Fase atual</div>
       <div class="status-strip-value" style="font-size:15px">Hom + Dev</div>
-      <div class="status-strip-sub">Onda 1 (Homologação jul/26) — Onda 2 (6 SPs em Dev.)</div>
+      <div class="status-strip-sub">Onda 1 (Homologação jul/26) — Onda 2 (7 SPs em Dev.)</div>
     </div>
-    <div class="status-ref">⚠️ Posição de referência — atualizar conforme avanço do programa &nbsp;|&nbsp; Referência: mai/2026</div>
+    <div class="status-ref">⚠️ Posição de referência — atualizar conforme avanço do programa &nbsp;|&nbsp; Referência: jul/2026</div>
   </div>
 
   <!-- Avanço físico por onda -->
@@ -894,7 +892,7 @@ body{font-family:'Segoe UI',Arial,sans-serif;background:var(--gray-50);color:var
     <div class="wave-progress-title">
       Avanço físico por onda — Previsto vs. Realizado
       <div class="wave-progress-legend">
-        <span class="wpl-legend-item"><span class="wpl-legend-dot" style="background:var(--gold)"></span>Previsto (mai/2026)</span>
+        <span class="wpl-legend-item"><span class="wpl-legend-dot" style="background:var(--gold)"></span>Previsto (jul/2026)</span>
         <span class="wpl-legend-item"><span class="wpl-legend-dot" style="background:var(--green)"></span>Realizado</span>
       </div>
     </div>
@@ -904,7 +902,33 @@ body{font-family:'Segoe UI',Arial,sans-serif;background:var(--gray-50);color:var
       <div class="wave-prog-row">
         <div class="wave-prog-label">
           <div class="wl-name">Onda 1</div>
-          <div class="wl-period">mar/26 — <strong style="color:var(--green)">jul/26</strong> — 3 SPs</div>
+          <div class="wl-period">mar/26 — <strong style="color:var(--green)">jul–ago/26</strong> — 2 SPs</div>
+        </div>
+        <div class="wave-prog-bars">
+          <div class="wave-prog-line">
+            <span class="wpl-tag" style="color:var(--gold)">Previsto</span>
+            <div class="wave-bar-track">
+              <div class="wave-bar-fill" style="width:100%;background:var(--gold)"></div>
+            </div>
+            <span class="wpl-pct" style="color:var(--gold)">100%</span>
+          </div>
+          <div class="wave-prog-line">
+            <span class="wpl-tag" style="color:var(--green)">Realizado</span>
+            <div class="wave-bar-track">
+              <div class="wave-bar-fill" style="width:95%;background:var(--green)"></div>
+            </div>
+            <span class="wpl-pct" style="color:var(--green)">95%</span>
+          </div>
+        </div>
+        <div class="wave-delta behind">−5%</div>
+        <div class="wave-prog-note">Homologação em curso (jul–ago/26) — <strong style="color:var(--red)">95% realizado vs. 100% previsto — 5 p.p. de atraso no fechamento da onda</strong></div>
+      </div>
+
+      <!-- ONDA 2 -->
+      <div class="wave-prog-row">
+        <div class="wave-prog-label">
+          <div class="wl-name">Onda 2</div>
+          <div class="wl-period">mai/26 → <strong style="color:var(--purple)">set/26</strong> — 7 SPs</div>
         </div>
         <div class="wave-prog-bars">
           <div class="wave-prog-line">
@@ -915,41 +939,15 @@ body{font-family:'Segoe UI',Arial,sans-serif;background:var(--gray-50);color:var
             <span class="wpl-pct" style="color:var(--gold)">75%</span>
           </div>
           <div class="wave-prog-line">
-            <span class="wpl-tag" style="color:var(--green)">Realizado</span>
-            <div class="wave-bar-track">
-              <div class="wave-bar-fill" style="width:85%;background:var(--green)"></div>
-            </div>
-            <span class="wpl-pct" style="color:var(--green)">85%</span>
-          </div>
-        </div>
-        <div class="wave-delta ahead">+10%</div>
-        <div class="wave-prog-note">Dev concluído (jun/26) — <strong style="color:var(--green)">Homologação em jul/26 — 10 p.p. acima do planejado</strong> 🎯</div>
-      </div>
-
-      <!-- ONDA 2 -->
-      <div class="wave-prog-row">
-        <div class="wave-prog-label">
-          <div class="wl-name">Onda 2</div>
-          <div class="wl-period">mai/26 → <strong style="color:var(--purple)">ago/26</strong> — 6 SPs</div>
-        </div>
-        <div class="wave-prog-bars">
-          <div class="wave-prog-line">
-            <span class="wpl-tag" style="color:var(--gold)">Previsto</span>
-            <div class="wave-bar-track">
-              <div class="wave-bar-fill" style="width:25%;background:var(--gold)"></div>
-            </div>
-            <span class="wpl-pct" style="color:var(--gold)">25%</span>
-          </div>
-          <div class="wave-prog-line">
             <span class="wpl-tag" style="color:var(--purple)">Realizado</span>
             <div class="wave-bar-track">
-              <div class="wave-bar-fill" style="width:30%;background:var(--purple)"></div>
+              <div class="wave-bar-fill" style="width:65%;background:var(--purple)"></div>
             </div>
-            <span class="wpl-pct" style="color:var(--purple)">30%</span>
+            <span class="wpl-pct" style="color:var(--purple)">65%</span>
           </div>
         </div>
-        <div class="wave-delta ahead" style="background:var(--purple-soft);color:var(--purple)">+5%</div>
-        <div class="wave-prog-note"><strong style="color:var(--purple)">Em Desenvolvimento</strong> — 6 SPs (mai/26) — repactuado ago/26 — <strong>5 p.p. acima do previsto</strong></div>
+        <div class="wave-delta behind">−10%</div>
+        <div class="wave-prog-note"><strong style="color:var(--purple)">Em Desenvolvimento</strong> — 7 SPs — repactuado set/26 —<strong style="color:var(--red)">65% realizado vs. 75% previsto — 10 p.p. de atraso</strong></div>
       </div>
 
       <!-- ONDA 3 -->
@@ -1040,20 +1038,20 @@ body{font-family:'Segoe UI',Arial,sans-serif;background:var(--gray-50);color:var
           <div class="wave-prog-line">
             <span class="wpl-tag" style="color:var(--gold)">Previsto</span>
             <div class="wave-bar-track" style="background:var(--gray-200)">
-              <div class="wave-bar-fill" style="width:12%;background:var(--gold)"></div>
+              <div class="wave-bar-fill" style="width:25%;background:var(--gold)"></div>
             </div>
-            <span class="wpl-pct" style="color:var(--gold)">12%</span>
+            <span class="wpl-pct" style="color:var(--gold)">25%</span>
           </div>
           <div class="wave-prog-line">
             <span class="wpl-tag" style="color:var(--navy)">Realizado</span>
             <div class="wave-bar-track" style="background:var(--gray-200)">
-              <div class="wave-bar-fill" style="width:18%;background:var(--navy)"></div>
+              <div class="wave-bar-fill" style="width:22%;background:var(--navy)"></div>
             </div>
-            <span class="wpl-pct" style="color:var(--navy);font-weight:900;font-size:12px">18%</span>
+            <span class="wpl-pct" style="color:var(--navy);font-weight:900;font-size:12px">22%</span>
           </div>
         </div>
-        <div class="wave-delta ahead" style="background:#D0EBF5;color:var(--navy)">+6%</div>
-        <div class="wave-prog-note" style="color:var(--navy);font-weight:600">9 de 24 SPs ativos — <strong>6 p.p. acima do previsto</strong> — repactuação aprovada mai/27</div>
+        <div class="wave-delta behind">−3%</div>
+        <div class="wave-prog-note" style="color:var(--navy);font-weight:600">9 de 24 SPs ativos — <strong style="color:var(--red)">3 p.p. abaixo do previsto</strong> — repactuação vigente mai/27</div>
       </div>
 
     </div>
@@ -1076,15 +1074,11 @@ body{font-family:'Segoe UI',Arial,sans-serif;background:var(--gray-50);color:var
     <div class="proposal-banner">
       <div class="proposal-banner-icon">🔄</div>
       <div class="proposal-banner-body">
-        <strong>Repactuação de ondas — jun/2026</strong> — Novo ciclo fixo de 4 meses por onda com paralelismo total; encerramento do programa antecipado para <strong>mai/27</strong> (antes jul/27). Posição oficial vigente.
-        <div class="proposal-banner-moves">
-          <span class="proposal-move up">↑ GIP-MT — Gestão do Investimento Público &nbsp;—&nbsp; Backlog → <strong>Onda 3</strong></span>
-          <span class="proposal-move up">↑ P3.2 08 — Dívida Pública &nbsp;—&nbsp; Onda 5 → <strong>Onda 3</strong></span>
-          <span class="proposal-move down">↓ P3.2 54.7 — NFS-e &nbsp;—&nbsp; <strong>Cancelado</strong></span>
-          <span class="proposal-move down">↓ Onda 2: mai/26 → <strong>ago/26</strong> (antes dez/26) — −4 meses</span>
-          <span class="proposal-move down">↓ Onda 3: ago/26 → <strong>nov/26</strong> (antes abr/27) — −5 meses</span>
-          <span class="proposal-move down">↓ Onda 4: nov/26 → <strong>fev/27</strong> (antes jun/27) — −4 meses</span>
-          <span class="proposal-move down">↓ Onda 5: fev/27 → <strong>mai/27</strong> (antes jul/27) — −2 meses</span>
+        <div style="font-weight:800;color:#5A3000;font-size:12.5px;margin-bottom:5px">Pontos de atenção</div>
+        <div style="display:flex;flex-direction:column;gap:5px;font-size:12px;color:#7A5000;line-height:1.5">
+          <span>• Importante <strong>definir o escopo da Onda 3</strong> — confirmar se todos os subprojetos previstos serão executados.</span>
+          <span>• Trabalho <strong>em paralelo de Orçamento para Resultados e Programação Financeira</strong> para apoio na definição do documento negocial.</span>
+          <span style="color:var(--red);font-weight:600"><span style="display:inline-block;font-size:9px;font-weight:800;color:#fff;background:var(--red);padding:1px 6px;border-radius:4px;margin-right:5px;vertical-align:middle">CRÍTICO</span><strong>Receita Integrada:</strong> área de negócio solicitando <strong>2 meses para homologação</strong> — impacto direto no cronograma da Onda 2.</span>
         </div>
       </div>
     </div>
@@ -1093,10 +1087,9 @@ body{font-family:'Segoe UI',Arial,sans-serif;background:var(--gray-50);color:var
       <div class="onda-label" style="background:#1A7A4A">
         <div class="num">Onda 1</div>
         <div class="name">Em Homologação</div>
-        <div class="period">jul/26 🎯</div>
+        <div class="period">jul–ago/26 🎯</div>
       </div>
       <div class="onda-chips">
-        <span class="onda-chip dev" data-sp="SP05" onclick="selectSP(this,'SP05')">P3.2 05 — SIAG Contratos</span>
         <span class="onda-chip dev" data-sp="SP07" onclick="selectSP(this,'SP07')">P3.2 07 — Patrimônio</span>
         <span class="onda-chip dev" data-sp="SP33" onclick="selectSP(this,'SP33')">P3.2 33 — Sol. e Autorizações</span>
       </div>
@@ -1106,15 +1099,16 @@ body{font-family:'Segoe UI',Arial,sans-serif;background:var(--gray-50);color:var
       <div class="onda-label" style="background:#6B3FA0">
         <div class="num">Onda 2</div>
         <div class="name">Em Desenvolvimento</div>
-        <div class="period">mai/26 → ago/26</div>
+        <div class="period">mai/26 → set/26</div>
       </div>
       <div class="onda-chips">
-        <span class="onda-chip spec" data-sp="SP01" onclick="selectSP(this,'SP01')">P3.2 01 — SIAG Aquisições</span>
+        <span class="onda-chip dev" data-sp="SP05" onclick="selectSP(this,'SP05')" style="border:2px solid var(--gold);background:var(--gold-light);color:#8A5000;font-weight:800" title="SIAG — Repactuado: Onda 1 → Onda 2">★ ↓ P3.2 05 — SIAG Contratos</span>
+        <span class="onda-chip spec" data-sp="SP01" onclick="selectSP(this,'SP01')" style="border:2px solid var(--gold);background:var(--gold-light);color:#8A5000;font-weight:800" title="SIAG — Integração SIAG Aquisições × FIPLAN">★ P3.2 01 — SIAG Aquisições</span>
+        <span class="onda-chip spec" style="border:2px solid var(--gold);background:var(--gold-light);color:#8A5000;font-weight:800" title="SIAG — Integração SIAG Aquisições × FIPLAN — Parte II">★ P3.2 01 — SIAG Aquisições II</span>
         <span class="onda-chip spec" data-sp="SP02" onclick="selectSP(this,'SP02')">P3.2 02 — Receita Integrada</span>
         <span class="onda-chip spec" data-sp="SP20" onclick="selectSP(this,'SP20')">P3.2 20 — Previsão de Receitas</span>
         <span class="onda-chip spec" data-sp="SP03" onclick="selectSP(this,'SP03')">P3.2 03 — Folha de Pagamento</span>
         <span class="onda-chip spec" title="Contabilização PED/EMP por Subelemento">P3.2 01.01 — PED/EMP Subelemento</span>
-        <span class="onda-chip spec" title="Integração SIAG Aquisições × FIPLAN — Parte II">P3.2 01 — SIAG Aquisições II</span>
       </div>
     </div>
 
@@ -1168,10 +1162,10 @@ body{font-family:'Segoe UI',Arial,sans-serif;background:var(--gray-50);color:var
 
   <div class="ondas-legend" style="margin-top:16px;justify-content:space-between;align-items:center">
     <div style="display:flex;gap:20px;flex-wrap:wrap">
-      <div class="leg-item"><div class="leg-dot" style="background:#1A7A4A"></div> Em Homologação (Onda 1 — <strong>jul/26</strong>)</div>
-      <div class="leg-item"><div class="leg-dot" style="background:#6B3FA0"></div> Em Desenvolvimento (Onda 2 — mai–ago/26)</div>
+      <div class="leg-item"><div class="leg-dot" style="background:#1A7A4A"></div> Em Homologação (Onda 1 — <strong>jul–ago/26</strong>)</div>
+      <div class="leg-item"><div class="leg-dot" style="background:#6B3FA0"></div> Em Desenvolvimento (Onda 2 — mai–set/26)</div>
       <div class="leg-item"><div class="leg-dot" style="background:var(--gray-600)"></div> Programado</div>
-      <div class="leg-item" style="color:var(--navy);font-weight:600">◄ Posição atual: Maio/2026 — Onda 1 em Homologação — Onda 2 em Desenvolvimento</div>
+      <div class="leg-item" style="color:var(--navy);font-weight:600">◄ Posição atual: Julho/2026 — Onda 1 em Homologação — Onda 2 em Desenvolvimento</div>
     </div>
   </div>
 
@@ -1187,7 +1181,7 @@ body{font-family:'Segoe UI',Arial,sans-serif;background:var(--gray-50);color:var
         <span style="display:inline-flex;align-items:center;gap:5px"><span style="width:14px;height:10px;background:#1A7A4A;border-radius:2px;display:inline-block"></span>Desenvolvimento</span>
         <span style="display:inline-flex;align-items:center;gap:5px"><span style="width:14px;height:10px;background:#C8962E;border-radius:2px;display:inline-block"></span>Homologação</span>
         <span style="display:inline-flex;align-items:center;gap:5px"><span style="width:14px;height:10px;background:#9AAABF;border-radius:2px;border:1px dashed #6C7A8D;opacity:.55;display:inline-block"></span>Antigo (vigente)</span>
-        <span style="display:inline-flex;align-items:center;gap:5px;background:#FFF8EC;border:1px solid #E8C870;border-radius:4px;padding:2px 7px;font-weight:700;color:#8A5000">◆ mai/26 — posição atual</span>
+        <span style="display:inline-flex;align-items:center;gap:5px;background:#FFF8EC;border:1px solid #E8C870;border-radius:4px;padding:2px 7px;font-weight:700;color:#8A5000">◆ jul/26 — posição atual</span>
       </div>
     </div>
     <div style="overflow-x:auto;-webkit-overflow-scrolling:touch">
@@ -1199,9 +1193,9 @@ body{font-family:'Segoe UI',Arial,sans-serif;background:var(--gray-50);color:var
           <!-- 2026 months -->
           <th style="text-align:center;padding:5px 2px;background:#1B2D7A;color:rgba(255,255,255,.7);font-size:9.5px;font-weight:700;min-width:46px">mar/26</th>
           <th style="text-align:center;padding:5px 2px;background:#1B2D7A;color:rgba(255,255,255,.7);font-size:9.5px;font-weight:700;min-width:46px">abr/26</th>
-          <th style="text-align:center;padding:5px 2px;background:#2040A0;color:#FFD98A;font-size:9.5px;font-weight:800;min-width:46px;border:2px solid #FFD98A">mai/26 ◆</th>
+          <th style="text-align:center;padding:5px 2px;background:#1B2D7A;color:rgba(255,255,255,.7);font-size:9.5px;font-weight:700;min-width:46px">mai/26</th>
           <th style="text-align:center;padding:5px 2px;background:#1B2D7A;color:rgba(255,255,255,.7);font-size:9.5px;font-weight:700;min-width:46px">jun/26</th>
-          <th style="text-align:center;padding:5px 2px;background:#1B2D7A;color:rgba(255,255,255,.7);font-size:9.5px;font-weight:700;min-width:46px">jul/26</th>
+          <th style="text-align:center;padding:5px 2px;background:#2040A0;color:#FFD98A;font-size:9.5px;font-weight:800;min-width:46px;border:2px solid #FFD98A">jul/26 ◆</th>
           <th style="text-align:center;padding:5px 2px;background:#1B2D7A;color:rgba(255,255,255,.7);font-size:9.5px;font-weight:700;min-width:46px">ago/26</th>
           <th style="text-align:center;padding:5px 2px;background:#1B2D7A;color:rgba(255,255,255,.7);font-size:9.5px;font-weight:700;min-width:46px">set/26</th>
           <th style="text-align:center;padding:5px 2px;background:#1B2D7A;color:rgba(255,255,255,.7);font-size:9.5px;font-weight:700;min-width:46px">out/26</th>
@@ -1228,7 +1222,7 @@ body{font-family:'Segoe UI',Arial,sans-serif;background:var(--gray-50);color:var
   (function(){
     // months array index: 0=mar/26 … 14=mai/27
     const MONTHS = ['mar/26','abr/26','mai/26','jun/26','jul/26','ago/26','set/26','out/26','nov/26','dez/26','jan/27','fev/27','mar/27','abr/27','mai/27'];
-    const CURRENT_MONTH = 2; // mai/26
+    const CURRENT_MONTH = 4; // jul/26
 
     // phase colors
     const C = { spec:'#8A55C0', dev:'#1A7A4A', hom:'#C8962E', old:'#9AAABF' };
@@ -1237,30 +1231,30 @@ body{font-family:'Segoe UI',Arial,sans-serif;background:var(--gray-50);color:var
     // start/end are MONTHS indices (0-based)
     const SPS_GANTT = [
       // ─── ONDA 1 (same in both plans) ───────────────────────────────────────
-      { code:'P3.2 05', name:'SIAG Contratos', onda:1,
-        novo:[ {s:0,e:0,ph:'spec'},{s:1,e:3,ph:'dev'},{s:4,e:4,ph:'hom'} ],
-        old: [] },
       { code:'P3.2 07', name:'Patrimônio (SISPAT)', onda:1,
-        novo:[ {s:0,e:0,ph:'spec'},{s:1,e:3,ph:'dev'},{s:4,e:4,ph:'hom'} ],
+        novo:[ {s:0,e:0,ph:'spec'},{s:1,e:3,ph:'dev'},{s:4,e:5,ph:'hom'} ],
         old: [] },
       { code:'P3.2 33', name:'Sol. e Autorizações', onda:1,
-        novo:[ {s:0,e:0,ph:'spec'},{s:1,e:3,ph:'dev'},{s:4,e:4,ph:'hom'} ],
+        novo:[ {s:0,e:0,ph:'spec'},{s:1,e:3,ph:'dev'},{s:4,e:5,ph:'hom'} ],
         old: [] },
       // ─── ONDA 2 ──────────────────────────────────────────────────────────
+      { code:'P3.2 05', name:'SIAG Contratos ↓', onda:2,
+        novo:[ {s:2,e:2,ph:'spec'},{s:3,e:5,ph:'dev'},{s:6,e:6,ph:'hom'} ],
+        old: [ {s:0,e:0,ph:'spec'},{s:1,e:3,ph:'dev'},{s:4,e:4,ph:'hom'} ] },
       { code:'P3.2 01', name:'SIAG Aquisições', onda:2,
-        novo:[ {s:2,e:2,ph:'spec'},{s:3,e:4,ph:'dev'},{s:5,e:5,ph:'hom'} ],
+        novo:[ {s:2,e:2,ph:'spec'},{s:3,e:5,ph:'dev'},{s:6,e:6,ph:'hom'} ],
         old: [ {s:2,e:2,ph:'spec'},{s:3,e:8,ph:'dev'},{s:9,e:9,ph:'hom'} ] },
       { code:'P3.2 01.01', name:'PED/EMP Subelemento', onda:2,
-        novo:[ {s:2,e:2,ph:'spec'},{s:3,e:4,ph:'dev'},{s:5,e:5,ph:'hom'} ],
+        novo:[ {s:2,e:2,ph:'spec'},{s:3,e:5,ph:'dev'},{s:6,e:6,ph:'hom'} ],
         old: [ {s:2,e:2,ph:'spec'},{s:3,e:8,ph:'dev'},{s:9,e:9,ph:'hom'} ] },
       { code:'P3.2 02', name:'Receita Integrada', onda:2,
-        novo:[ {s:2,e:2,ph:'spec'},{s:3,e:4,ph:'dev'},{s:5,e:5,ph:'hom'} ],
+        novo:[ {s:2,e:2,ph:'spec'},{s:3,e:5,ph:'dev'},{s:6,e:6,ph:'hom'} ],
         old: [ {s:2,e:2,ph:'spec'},{s:3,e:8,ph:'dev'},{s:9,e:9,ph:'hom'} ] },
       { code:'P3.2 20', name:'Previsão de Receitas', onda:2,
-        novo:[ {s:2,e:2,ph:'spec'},{s:3,e:4,ph:'dev'},{s:5,e:5,ph:'hom'} ],
+        novo:[ {s:2,e:2,ph:'spec'},{s:3,e:5,ph:'dev'},{s:6,e:6,ph:'hom'} ],
         old: [ {s:2,e:2,ph:'spec'},{s:3,e:8,ph:'dev'},{s:9,e:9,ph:'hom'} ] },
       { code:'P3.2 03', name:'Folha de Pagamento', onda:2,
-        novo:[ {s:2,e:2,ph:'spec'},{s:3,e:4,ph:'dev'},{s:5,e:5,ph:'hom'} ],
+        novo:[ {s:2,e:2,ph:'spec'},{s:3,e:5,ph:'dev'},{s:6,e:6,ph:'hom'} ],
         old: [ {s:2,e:2,ph:'spec'},{s:3,e:8,ph:'dev'},{s:9,e:9,ph:'hom'} ] },
       // ─── ONDA 3 ──────────────────────────────────────────────────────────
       { code:'P3.2 19', name:'Orç. Cidadão Digital', onda:3,
@@ -1394,21 +1388,21 @@ body{font-family:'Segoe UI',Arial,sans-serif;background:var(--gray-50);color:var
           <div class="fin-sum-card-label">Escopo Elogroup</div>
           <div class="fin-sum-card-value" style="color:#1A5A9A">R$ 16.194.944</div>
           <div class="fin-sum-card-sub">101.218,40 USTs — saldo após MTI/Loglab<br><span style="color:#B05000;font-size:10px">Consumo Loglab: R$ 1.325.056 — 8.281,60 USTs</span></div>
-          <span class="fin-sum-card-pill" style="background:#DDEEFF;color:#1A5A9A">92,5% do contrato</span>
+          <span class="fin-sum-card-pill" style="background:#DDEEFF;color:#1A5A9A">92,4% do contrato</span>
         </div>
         <div class="fin-sum-card" style="border-top-color:#B8860B">
           <div class="fin-sum-card-icon">📋</div>
           <div class="fin-sum-card-label">Dimensionado + Estimado</div>
-          <div class="fin-sum-card-value" style="color:#B8860B">R$ 13.773.830</div>
-          <div class="fin-sum-card-sub">Ondas 1+2 dimensionadas pelo Catálogo C3SW (R$ 3,21M) + Ondas 3–5 estimadas (R$ 10,56M)<br>Base: Catálogo C3SW v1.1</div>
-          <span class="fin-sum-card-pill" style="background:#FFF3CC;color:#B8860B">85,1% do escopo</span>
+          <div class="fin-sum-card-value" style="color:#B8860B">R$ 14.879.531</div>
+          <div class="fin-sum-card-sub">Ondas 1+2 dimensionadas pelo Catálogo C3SW (R$ 4,32M) + Ondas 3–5 estimadas (R$ 10,56M)<br>Base: Catálogo C3SW v1.1</div>
+          <span class="fin-sum-card-pill" style="background:#FFF3CC;color:#B8860B">91,9% do escopo</span>
         </div>
         <div class="fin-sum-card" style="border-top-color:#1A7A4A">
           <div class="fin-sum-card-icon">💵</div>
           <div class="fin-sum-card-label">Saldo Disponível</div>
-          <div class="fin-sum-card-value" style="color:#1A7A4A">R$ 2.421.114</div>
-          <div class="fin-sum-card-sub">Escopo Elogroup − Dimensionado/Estimado<br>Margem técnica ampliada vs. abr/26</div>
-          <span class="fin-sum-card-pill" style="background:#D1F5E4;color:#1A7A4A">15% do escopo</span>
+          <div class="fin-sum-card-value" style="color:#1A7A4A">R$ 1.315.413</div>
+          <div class="fin-sum-card-sub">Escopo Elogroup − Dimensionado/Estimado<br>Margem recalculada após reavaliação Ondas 1+2 pelos JSONs jul/26</div>
+          <span class="fin-sum-card-pill" style="background:#D1F5E4;color:#1A7A4A">8,1% do escopo</span>
         </div>
       </div>
 
@@ -1435,13 +1429,12 @@ body{font-family:'Segoe UI',Arial,sans-serif;background:var(--gray-50);color:var
             </tr>
           </thead>
           <tbody>
-            <tr style="background:#1A7A4A"><td colspan="8" style="padding:6px 12px;font-size:10.5px;font-weight:800;color:#fff;letter-spacing:.2px">● ONDA 1 — Em Homologação  ·  mar/26 → jul/26  ·  Dimensionado (Catálogo C3SW)</td></tr><tr style="border-bottom:1px solid var(--gray-100)"><td style="padding:5px 10px;font-weight:600;font-size:10.5px">P3.2 05 — SIAG Contratos<span style="font-size:8.5px;font-weight:700;color:#fff;background:#1B2D7A;padding:1px 5px;border-radius:4px;margin-left:5px;vertical-align:middle">SACE</span></td><td style="padding:5px 8px;text-align:right;color:var(--gray-600);font-size:10.5px;font-style:normal">R$ 800.000</td><td style="padding:5px 8px;text-align:center;color:var(--gray-300);font-size:11px">—</td><td style="padding:5px 8px;text-align:center;color:var(--gray-300);font-size:11px">—</td><td style="padding:5px 8px;text-align:right;color:var(--gray-600);font-size:10.5px">3.975,54</td><td style="padding:5px 8px;text-align:right;color:var(--gray-600);font-size:10.5px">R$ 636.086</td><td style="padding:5px 8px;text-align:right;font-weight:700;color:var(--navy);font-size:10.5px;font-style:normal">R$ 636.086</td><td style="padding:5px 8px;text-align:right;font-weight:700;font-size:10.5px;color:var(--green)">−R$ 163.914</td></tr><tr style="border-bottom:1px solid var(--gray-100)"><td style="padding:5px 10px;font-weight:600;font-size:10.5px">P3.2 07 — Patrimônio SISPAT<span style="font-size:8.5px;font-weight:700;color:#fff;background:#1B2D7A;padding:1px 5px;border-radius:4px;margin-left:5px;vertical-align:middle">SACE</span></td><td style="padding:5px 8px;text-align:right;color:var(--gray-600);font-size:10.5px;font-style:normal">R$ 800.000</td><td style="padding:5px 8px;text-align:right;color:var(--gray-600);font-size:10.5px">56,50</td><td style="padding:5px 8px;text-align:right;color:var(--gray-600);font-size:10.5px">R$ 9.040</td><td style="padding:5px 8px;text-align:right;color:var(--gray-600);font-size:10.5px">2.291,85</td><td style="padding:5px 8px;text-align:right;color:var(--gray-600);font-size:10.5px">R$ 366.696</td><td style="padding:5px 8px;text-align:right;font-weight:700;color:var(--navy);font-size:10.5px;font-style:normal">R$ 375.736</td><td style="padding:5px 8px;text-align:right;font-weight:700;font-size:10.5px;color:var(--green)">−R$ 424.264</td></tr><tr style="border-bottom:1px solid var(--gray-100)"><td style="padding:5px 10px;font-weight:600;font-size:10.5px">P3.2 33 — Sol. e Autorizações<span style="font-size:8.5px;font-weight:700;color:#fff;background:#4A2080;padding:1px 5px;border-radius:4px;margin-left:5px;vertical-align:middle">SATE</span></td><td style="padding:5px 8px;text-align:right;color:var(--gray-600);font-size:10.5px;font-style:normal">R$ 800.000</td><td style="padding:5px 8px;text-align:right;color:var(--gray-600);font-size:10.5px">56,50 ¹</td><td style="padding:5px 8px;text-align:right;color:var(--gray-600);font-size:10.5px">R$ 0 ¹</td><td style="padding:5px 8px;text-align:right;color:var(--gray-600);font-size:10.5px">2.529,83</td><td style="padding:5px 8px;text-align:right;color:var(--gray-600);font-size:10.5px">R$ 404.773</td><td style="padding:5px 8px;text-align:right;font-weight:700;color:var(--navy);font-size:10.5px;font-style:normal">R$ 413.813</td><td style="padding:5px 8px;text-align:right;font-weight:700;font-size:10.5px;color:var(--green)">−R$ 386.187</td></tr><tr style="border-top:2px solid #1A7A4A40;background:#1A7A4A18"><td style="padding:6px 10px;font-weight:800;font-size:10.5px;color:#1A7A4A">Subtotal Onda 1</td><td style="padding:6px 8px;text-align:right;font-weight:800;color:var(--gray-600)">R$ 2.400.000</td><td style="padding:6px 8px;text-align:right;font-weight:800;color:#1A7A4A">113,00</td><td style="padding:6px 8px;text-align:right;font-weight:800;color:#1A7A4A">R$ 9.040</td><td style="padding:6px 8px;text-align:right;font-weight:800;color:#1A7A4A">8.797,22</td><td style="padding:6px 8px;text-align:right;font-weight:800;color:#1A7A4A">R$ 1.407.555</td><td style="padding:6px 8px;text-align:right;font-weight:800;color:var(--navy)">R$ 1.425.635</td><td style="padding:6px 8px;text-align:right;font-weight:800;color:var(--green)">−R$ 974.365</td></tr><tr style="background:#6B3FA0"><td colspan="8" style="padding:6px 12px;font-size:10.5px;font-weight:800;color:#fff;letter-spacing:.2px">● ONDA 2 — Em Desenvolvimento  ·  mai/26 → ago/26  ·  Dimensionado (Catálogo C3SW)</td></tr><tr style="border-bottom:1px solid var(--gray-100)"><td style="padding:5px 10px;font-weight:600;font-size:10.5px">P3.2 01 — SIAG Aquisições<span style="font-size:8.5px;font-weight:700;color:#fff;background:#1B2D7A;padding:1px 5px;border-radius:4px;margin-left:5px;vertical-align:middle">SACE</span></td><td style="padding:5px 8px;text-align:right;color:var(--gray-600);font-size:10.5px;font-style:italic">A definir</td><td style="padding:5px 8px;text-align:right;color:var(--gray-600);font-size:10.5px">56,50</td><td style="padding:5px 8px;text-align:right;color:var(--gray-600);font-size:10.5px">R$ 9.040</td><td style="padding:5px 8px;text-align:right;color:var(--gray-600);font-size:10.5px">1.676,53</td><td style="padding:5px 8px;text-align:right;color:var(--gray-600);font-size:10.5px">R$ 268.245</td><td style="padding:5px 8px;text-align:right;font-weight:700;color:var(--navy);font-size:10.5px;font-style:normal">R$ 277.285</td><td style="padding:5px 8px;text-align:center;color:var(--gray-300);font-size:11px">—</td></tr><tr style="border-bottom:1px solid var(--gray-100)"><td style="padding:5px 10px;font-weight:600;font-size:10.5px">P3.2 01.01 — PED/EMP Subelemento<span style="font-size:8.5px;font-weight:700;color:#fff;background:#1B2D7A;padding:1px 5px;border-radius:4px;margin-left:5px;vertical-align:middle">SACE</span></td><td style="padding:5px 8px;text-align:right;color:var(--gray-600);font-size:10.5px;font-style:italic">A definir</td><td style="padding:5px 8px;text-align:right;color:var(--gray-600);font-size:10.5px">56,50</td><td style="padding:5px 8px;text-align:right;color:var(--gray-600);font-size:10.5px">R$ 9.040</td><td style="padding:5px 8px;text-align:right;color:var(--gray-600);font-size:10.5px">1.476,51</td><td style="padding:5px 8px;text-align:right;color:var(--gray-600);font-size:10.5px">R$ 236.242</td><td style="padding:5px 8px;text-align:right;font-weight:700;color:var(--navy);font-size:10.5px;font-style:normal">R$ 245.282</td><td style="padding:5px 8px;text-align:center;color:var(--gray-300);font-size:11px">—</td></tr><tr style="border-bottom:1px solid var(--gray-100)"><td style="padding:5px 10px;font-weight:600;font-size:10.5px">P3.2 02 — Receita Integrada<span style="font-size:8.5px;font-weight:700;color:#fff;background:#1B2D7A;padding:1px 5px;border-radius:4px;margin-left:5px;vertical-align:middle">SACE</span></td><td style="padding:5px 8px;text-align:right;color:var(--gray-600);font-size:10.5px;font-style:normal">R$ 1.120.000</td><td style="padding:5px 8px;text-align:right;color:var(--gray-600);font-size:10.5px">56,50</td><td style="padding:5px 8px;text-align:right;color:var(--gray-600);font-size:10.5px">R$ 9.040</td><td style="padding:5px 8px;text-align:right;color:var(--gray-600);font-size:10.5px">2.319,33</td><td style="padding:5px 8px;text-align:right;color:var(--gray-600);font-size:10.5px">R$ 371.093</td><td style="padding:5px 8px;text-align:right;font-weight:700;color:var(--navy);font-size:10.5px;font-style:normal">R$ 380.133</td><td style="padding:5px 8px;text-align:right;font-weight:700;font-size:10.5px;color:var(--green)">−R$ 739.867</td></tr><tr style="border-bottom:1px solid var(--gray-100)"><td style="padding:5px 10px;font-weight:600;font-size:10.5px">P3.2 03 — Folha de Pagamento<span style="font-size:8.5px;font-weight:700;color:#fff;background:#1B2D7A;padding:1px 5px;border-radius:4px;margin-left:5px;vertical-align:middle">SACE</span></td><td style="padding:5px 8px;text-align:right;color:var(--gray-600);font-size:10.5px;font-style:normal">R$ 1.280.000</td><td style="padding:5px 8px;text-align:right;color:var(--gray-600);font-size:10.5px">56,50</td><td style="padding:5px 8px;text-align:right;color:var(--gray-600);font-size:10.5px">R$ 9.040</td><td style="padding:5px 8px;text-align:right;color:var(--gray-600);font-size:10.5px">1.881,66</td><td style="padding:5px 8px;text-align:right;color:var(--gray-600);font-size:10.5px">R$ 301.066</td><td style="padding:5px 8px;text-align:right;font-weight:700;color:var(--navy);font-size:10.5px;font-style:normal">R$ 310.106</td><td style="padding:5px 8px;text-align:right;font-weight:700;font-size:10.5px;color:var(--green)">−R$ 969.894</td></tr><tr style="border-bottom:1px solid var(--gray-100)"><td style="padding:5px 10px;font-weight:600;font-size:10.5px">P3.2 20 — Previsão de Receitas<span style="font-size:8.5px;font-weight:700;color:#fff;background:#1A5A9A;padding:1px 5px;border-radius:4px;margin-left:5px;vertical-align:middle">SAOR</span></td><td style="padding:5px 8px;text-align:right;color:var(--gray-600);font-size:10.5px;font-style:normal">R$ 640.000</td><td style="padding:5px 8px;text-align:right;color:var(--gray-600);font-size:10.5px">56,50</td><td style="padding:5px 8px;text-align:right;color:var(--gray-600);font-size:10.5px">R$ 9.040</td><td style="padding:5px 8px;text-align:right;color:var(--gray-600);font-size:10.5px">3.539,69</td><td style="padding:5px 8px;text-align:right;color:var(--gray-600);font-size:10.5px">R$ 566.350</td><td style="padding:5px 8px;text-align:right;font-weight:700;color:var(--navy);font-size:10.5px;font-style:normal">R$ 575.390</td><td style="padding:5px 8px;text-align:right;font-weight:700;font-size:10.5px;color:var(--red)">+R$ 64.610 ⬆</td></tr><tr style="border-top:2px solid #6B3FA040;background:#6B3FA018"><td style="padding:6px 10px;font-weight:800;font-size:10.5px;color:#6B3FA0">Subtotal Onda 2</td><td style="padding:6px 8px;text-align:right;font-weight:800;color:var(--gray-600)">R$ 3.040.000 ²</td><td style="padding:6px 8px;text-align:right;font-weight:800;color:#6B3FA0">282,50</td><td style="padding:6px 8px;text-align:right;font-weight:800;color:#6B3FA0">R$ 45.200</td><td style="padding:6px 8px;text-align:right;font-weight:800;color:#6B3FA0">10.893,72</td><td style="padding:6px 8px;text-align:right;font-weight:800;color:#6B3FA0">R$ 1.742.996</td><td style="padding:6px 8px;text-align:right;font-weight:800;color:var(--navy)">R$ 1.788.196</td><td style="padding:6px 8px;text-align:right;font-weight:800;color:var(--green)">−R$ 1.251.804</td></tr><tr style="background:#E8EDFA;border-top:3px solid var(--navy)"><td style="padding:7px 10px;font-weight:900;color:var(--navy);font-size:11px">TOTAL DIMENSIONADO (Ondas 1+2)</td><td style="padding:7px 8px;text-align:right;font-weight:700;color:var(--gray-600)">R$ 5.440.000</td><td style="padding:7px 8px;text-align:right;font-weight:900;color:var(--navy)">395,50</td><td style="padding:7px 8px;text-align:right;font-weight:900;color:var(--navy)">R$ 63.280</td><td style="padding:7px 8px;text-align:right;font-weight:900;color:var(--navy)">19.690,94</td><td style="padding:7px 8px;text-align:right;font-weight:900;color:var(--navy)">R$ 3.150.551</td><td style="padding:7px 8px;text-align:right;font-weight:900;color:var(--navy);font-size:11px">R$ 3.213.831</td><td style="padding:7px 8px;text-align:right;font-weight:900;color:var(--green);font-size:11px">−R$ 2.226.169</td></tr><tr style="background:#1A5A9A"><td colspan="8" style="padding:6px 12px;font-size:10.5px;font-weight:800;color:#fff;letter-spacing:.2px">● ONDA 3 — Programada  ·  ago/26 → nov/26  ·  Estimado (a dimensionar)</td></tr><tr style="border-bottom:1px solid var(--gray-100)"><td style="padding:5px 10px;font-weight:600;font-size:10.5px">P3.2 19 — Orç. Cidadão Digital<span style="font-size:8.5px;font-weight:700;color:#fff;background:#1A5A9A;padding:1px 5px;border-radius:4px;margin-left:5px;vertical-align:middle">SAOR</span></td><td style="padding:5px 8px;text-align:right;color:var(--gray-600);font-size:10.5px;font-style:normal">R$ 480.000</td><td style="padding:5px 8px;text-align:center;color:var(--gray-300);font-size:11px">—</td><td style="padding:5px 8px;text-align:center;color:var(--gray-300);font-size:11px">—</td><td style="padding:5px 8px;text-align:center;color:var(--gray-300);font-size:11px">—</td><td style="padding:5px 8px;text-align:center;color:var(--gray-300);font-size:11px">—</td><td style="padding:5px 8px;text-align:right;font-weight:700;color:var(--navy);font-size:10.5px;font-style:normal">R$ 480.000</td><td style="padding:5px 8px;text-align:center;color:var(--gray-300);font-size:11px">—</td></tr><tr style="border-bottom:1px solid var(--gray-100)"><td style="padding:5px 10px;font-weight:600;font-size:10.5px">P3.2 14 — Orç. p/ Resultado<span style="font-size:8.5px;font-weight:700;color:#fff;background:#1A5A9A;padding:1px 5px;border-radius:4px;margin-left:5px;vertical-align:middle">SAOR</span></td><td style="padding:5px 8px;text-align:right;color:var(--gray-600);font-size:10.5px;font-style:normal">R$ 800.000</td><td style="padding:5px 8px;text-align:center;color:var(--gray-300);font-size:11px">—</td><td style="padding:5px 8px;text-align:center;color:var(--gray-300);font-size:11px">—</td><td style="padding:5px 8px;text-align:center;color:var(--gray-300);font-size:11px">—</td><td style="padding:5px 8px;text-align:center;color:var(--gray-300);font-size:11px">—</td><td style="padding:5px 8px;text-align:right;font-weight:700;color:var(--navy);font-size:10.5px;font-style:normal">R$ 800.000</td><td style="padding:5px 8px;text-align:center;color:var(--gray-300);font-size:11px">—</td></tr><tr style="border-bottom:1px solid var(--gray-100)"><td style="padding:5px 10px;font-weight:600;font-size:10.5px">P3.2 10 — Precatórios<span style="font-size:8.5px;font-weight:700;color:#fff;background:#1B2D7A;padding:1px 5px;border-radius:4px;margin-left:5px;vertical-align:middle">SACE</span></td><td style="padding:5px 8px;text-align:right;color:var(--gray-600);font-size:10.5px;font-style:normal">R$ 640.000</td><td style="padding:5px 8px;text-align:center;color:var(--gray-300);font-size:11px">—</td><td style="padding:5px 8px;text-align:center;color:var(--gray-300);font-size:11px">—</td><td style="padding:5px 8px;text-align:center;color:var(--gray-300);font-size:11px">—</td><td style="padding:5px 8px;text-align:center;color:var(--gray-300);font-size:11px">—</td><td style="padding:5px 8px;text-align:right;font-weight:700;color:var(--navy);font-size:10.5px;font-style:normal">R$ 640.000</td><td style="padding:5px 8px;text-align:center;color:var(--gray-300);font-size:11px">—</td></tr><tr style="border-bottom:1px solid var(--gray-100)"><td style="padding:5px 10px;font-weight:600;font-size:10.5px">P3.2 35 — Duodécimo<span style="font-size:8.5px;font-weight:700;color:#fff;background:#4A2080;padding:1px 5px;border-radius:4px;margin-left:5px;vertical-align:middle">SATE</span></td><td style="padding:5px 8px;text-align:right;color:var(--gray-600);font-size:10.5px;font-style:normal">R$ 640.000</td><td style="padding:5px 8px;text-align:center;color:var(--gray-300);font-size:11px">—</td><td style="padding:5px 8px;text-align:center;color:var(--gray-300);font-size:11px">—</td><td style="padding:5px 8px;text-align:center;color:var(--gray-300);font-size:11px">—</td><td style="padding:5px 8px;text-align:center;color:var(--gray-300);font-size:11px">—</td><td style="padding:5px 8px;text-align:right;font-weight:700;color:var(--navy);font-size:10.5px;font-style:normal">R$ 640.000</td><td style="padding:5px 8px;text-align:center;color:var(--gray-300);font-size:11px">—</td></tr><tr style="border-bottom:1px solid var(--gray-100)"><td style="padding:5px 10px;font-weight:600;font-size:10.5px">GIP-MT — Gestão Inv. Público ↑<span style="font-size:8.5px;font-weight:700;color:#fff;background:#1B2D7A;padding:1px 5px;border-radius:4px;margin-left:5px;vertical-align:middle">SACE</span></td><td style="padding:5px 8px;text-align:right;color:var(--gray-600);font-size:10.5px;font-style:normal">R$ 640.000</td><td style="padding:5px 8px;text-align:center;color:var(--gray-300);font-size:11px">—</td><td style="padding:5px 8px;text-align:center;color:var(--gray-300);font-size:11px">—</td><td style="padding:5px 8px;text-align:center;color:var(--gray-300);font-size:11px">—</td><td style="padding:5px 8px;text-align:center;color:var(--gray-300);font-size:11px">—</td><td style="padding:5px 8px;text-align:right;font-weight:700;color:var(--navy);font-size:10.5px;font-style:normal">R$ 640.000</td><td style="padding:5px 8px;text-align:center;color:var(--gray-300);font-size:11px">—</td></tr><tr style="border-bottom:1px solid var(--gray-100)"><td style="padding:5px 10px;font-weight:600;font-size:10.5px">P3.2 08 — Dívida Pública ↑<span style="font-size:8.5px;font-weight:700;color:#fff;background:#1B2D7A;padding:1px 5px;border-radius:4px;margin-left:5px;vertical-align:middle">SACE</span></td><td style="padding:5px 8px;text-align:right;color:var(--gray-600);font-size:10.5px;font-style:normal">R$ 960.000</td><td style="padding:5px 8px;text-align:center;color:var(--gray-300);font-size:11px">—</td><td style="padding:5px 8px;text-align:center;color:var(--gray-300);font-size:11px">—</td><td style="padding:5px 8px;text-align:center;color:var(--gray-300);font-size:11px">—</td><td style="padding:5px 8px;text-align:center;color:var(--gray-300);font-size:11px">—</td><td style="padding:5px 8px;text-align:right;font-weight:700;color:var(--navy);font-size:10.5px;font-style:normal">R$ 960.000</td><td style="padding:5px 8px;text-align:center;color:var(--gray-300);font-size:11px">—</td></tr><tr style="border-top:2px solid #1A5A9A40;background:#1A5A9A18"><td style="padding:6px 10px;font-weight:800;font-size:10.5px;color:#1A5A9A">Subtotal Onda 3</td><td style="padding:6px 8px;text-align:right;font-weight:800;color:var(--gray-600)">R$ 4.160.000</td><td style="padding:5px 8px;text-align:center;color:var(--gray-300);font-size:11px">—</td><td style="padding:5px 8px;text-align:center;color:var(--gray-300);font-size:11px">—</td><td style="padding:5px 8px;text-align:center;color:var(--gray-300);font-size:11px">—</td><td style="padding:5px 8px;text-align:center;color:var(--gray-300);font-size:11px">—</td><td style="padding:6px 8px;text-align:right;font-weight:800;color:var(--navy)">R$ 4.160.000</td><td style="padding:5px 8px;text-align:center;color:var(--gray-300);font-size:11px">—</td></tr><tr style="background:#1A6B4A"><td colspan="8" style="padding:6px 12px;font-size:10.5px;font-weight:800;color:#fff;letter-spacing:.2px">● ONDA 4 — Programada  ·  nov/26 → fev/27  ·  Estimado  ·  ⚠️ Pico 6 SPs</td></tr><tr style="border-bottom:1px solid var(--gray-100)"><td style="padding:5px 10px;font-weight:600;font-size:10.5px">P3.2 54.6 — NF-e<span style="font-size:8.5px;font-weight:700;color:#fff;background:#1B2D7A;padding:1px 5px;border-radius:4px;margin-left:5px;vertical-align:middle">SACE</span></td><td style="padding:5px 8px;text-align:right;color:var(--gray-600);font-size:10.5px;font-style:normal">R$ 640.000</td><td style="padding:5px 8px;text-align:center;color:var(--gray-300);font-size:11px">—</td><td style="padding:5px 8px;text-align:center;color:var(--gray-300);font-size:11px">—</td><td style="padding:5px 8px;text-align:center;color:var(--gray-300);font-size:11px">—</td><td style="padding:5px 8px;text-align:center;color:var(--gray-300);font-size:11px">—</td><td style="padding:5px 8px;text-align:right;font-weight:700;color:var(--navy);font-size:10.5px;font-style:normal">R$ 640.000</td><td style="padding:5px 8px;text-align:center;color:var(--gray-300);font-size:11px">—</td></tr><tr style="border-bottom:1px solid var(--gray-100)"><td style="padding:5px 10px;font-weight:600;font-size:10.5px">P3.2 47 — Monitora Monitoramento<span style="font-size:8.5px;font-weight:700;color:#fff;background:#1A6B4A;padding:1px 5px;border-radius:4px;margin-left:5px;vertical-align:middle">SEPLAG</span></td><td style="padding:5px 8px;text-align:right;color:var(--gray-600);font-size:10.5px;font-style:normal">R$ 480.000</td><td style="padding:5px 8px;text-align:center;color:var(--gray-300);font-size:11px">—</td><td style="padding:5px 8px;text-align:center;color:var(--gray-300);font-size:11px">—</td><td style="padding:5px 8px;text-align:center;color:var(--gray-300);font-size:11px">—</td><td style="padding:5px 8px;text-align:center;color:var(--gray-300);font-size:11px">—</td><td style="padding:5px 8px;text-align:right;font-weight:700;color:var(--navy);font-size:10.5px;font-style:normal">R$ 480.000</td><td style="padding:5px 8px;text-align:center;color:var(--gray-300);font-size:11px">—</td></tr><tr style="border-bottom:1px solid var(--gray-100)"><td style="padding:5px 10px;font-weight:600;font-size:10.5px">P3.2 48 — Monitora RAG<span style="font-size:8.5px;font-weight:700;color:#fff;background:#1A6B4A;padding:1px 5px;border-radius:4px;margin-left:5px;vertical-align:middle">SEPLAG</span></td><td style="padding:5px 8px;text-align:right;color:var(--gray-600);font-size:10.5px;font-style:normal">R$ 480.000</td><td style="padding:5px 8px;text-align:center;color:var(--gray-300);font-size:11px">—</td><td style="padding:5px 8px;text-align:center;color:var(--gray-300);font-size:11px">—</td><td style="padding:5px 8px;text-align:center;color:var(--gray-300);font-size:11px">—</td><td style="padding:5px 8px;text-align:center;color:var(--gray-300);font-size:11px">—</td><td style="padding:5px 8px;text-align:right;font-weight:700;color:var(--navy);font-size:10.5px;font-style:normal">R$ 480.000</td><td style="padding:5px 8px;text-align:center;color:var(--gray-300);font-size:11px">—</td></tr><tr style="border-bottom:1px solid var(--gray-100)"><td style="padding:5px 10px;font-weight:600;font-size:10.5px">P3.2 52 — Consulta Pública<span style="font-size:8.5px;font-weight:700;color:#fff;background:#1A6B4A;padding:1px 5px;border-radius:4px;margin-left:5px;vertical-align:middle">SEPLAG</span></td><td style="padding:5px 8px;text-align:right;color:var(--gray-600);font-size:10.5px;font-style:normal">R$ 160.000</td><td style="padding:5px 8px;text-align:center;color:var(--gray-300);font-size:11px">—</td><td style="padding:5px 8px;text-align:center;color:var(--gray-300);font-size:11px">—</td><td style="padding:5px 8px;text-align:center;color:var(--gray-300);font-size:11px">—</td><td style="padding:5px 8px;text-align:center;color:var(--gray-300);font-size:11px">—</td><td style="padding:5px 8px;text-align:right;font-weight:700;color:var(--navy);font-size:10.5px;font-style:normal">R$ 160.000</td><td style="padding:5px 8px;text-align:center;color:var(--gray-300);font-size:11px">—</td></tr><tr style="border-bottom:1px solid var(--gray-100)"><td style="padding:5px 10px;font-weight:600;font-size:10.5px">P3.2 04 — Integração SET<span style="font-size:8.5px;font-weight:700;color:#fff;background:#1B2D7A;padding:1px 5px;border-radius:4px;margin-left:5px;vertical-align:middle">SACE</span></td><td style="padding:5px 8px;text-align:right;color:var(--gray-600);font-size:10.5px;font-style:normal">R$ 640.000</td><td style="padding:5px 8px;text-align:center;color:var(--gray-300);font-size:11px">—</td><td style="padding:5px 8px;text-align:center;color:var(--gray-300);font-size:11px">—</td><td style="padding:5px 8px;text-align:center;color:var(--gray-300);font-size:11px">—</td><td style="padding:5px 8px;text-align:center;color:var(--gray-300);font-size:11px">—</td><td style="padding:5px 8px;text-align:right;font-weight:700;color:var(--navy);font-size:10.5px;font-style:normal">R$ 640.000</td><td style="padding:5px 8px;text-align:center;color:var(--gray-300);font-size:11px">—</td></tr><tr style="border-bottom:1px solid var(--gray-100)"><td style="padding:5px 10px;font-weight:600;font-size:10.5px">P3.2 53 — Orientações Estratégicas<span style="font-size:8.5px;font-weight:700;color:#fff;background:#1A6B4A;padding:1px 5px;border-radius:4px;margin-left:5px;vertical-align:middle">SEPLAG</span></td><td style="padding:5px 8px;text-align:right;color:var(--gray-600);font-size:10.5px;font-style:normal">R$ 320.000</td><td style="padding:5px 8px;text-align:center;color:var(--gray-300);font-size:11px">—</td><td style="padding:5px 8px;text-align:center;color:var(--gray-300);font-size:11px">—</td><td style="padding:5px 8px;text-align:center;color:var(--gray-300);font-size:11px">—</td><td style="padding:5px 8px;text-align:center;color:var(--gray-300);font-size:11px">—</td><td style="padding:5px 8px;text-align:right;font-weight:700;color:var(--navy);font-size:10.5px;font-style:normal">R$ 320.000</td><td style="padding:5px 8px;text-align:center;color:var(--gray-300);font-size:11px">—</td></tr><tr style="border-top:2px solid #1A6B4A40;background:#1A6B4A18"><td style="padding:6px 10px;font-weight:800;font-size:10.5px;color:#1A6B4A">Subtotal Onda 4</td><td style="padding:6px 8px;text-align:right;font-weight:800;color:var(--gray-600)">R$ 2.720.000</td><td style="padding:5px 8px;text-align:center;color:var(--gray-300);font-size:11px">—</td><td style="padding:5px 8px;text-align:center;color:var(--gray-300);font-size:11px">—</td><td style="padding:5px 8px;text-align:center;color:var(--gray-300);font-size:11px">—</td><td style="padding:5px 8px;text-align:center;color:var(--gray-300);font-size:11px">—</td><td style="padding:6px 8px;text-align:right;font-weight:800;color:var(--navy)">R$ 2.720.000</td><td style="padding:5px 8px;text-align:center;color:var(--gray-300);font-size:11px">—</td></tr><tr style="background:#7A3A1A"><td colspan="8" style="padding:6px 12px;font-size:10.5px;font-weight:800;color:#fff;letter-spacing:.2px">● ONDA 5 — Programada  ·  fev/27 → mai/27  ·  Estimado (a dimensionar)</td></tr><tr style="border-bottom:1px solid var(--gray-100)"><td style="padding:5px 10px;font-weight:600;font-size:10.5px">P3.2 31 — Fluxo de Caixa<span style="font-size:8.5px;font-weight:700;color:#fff;background:#4A2080;padding:1px 5px;border-radius:4px;margin-left:5px;vertical-align:middle">SATE</span></td><td style="padding:5px 8px;text-align:right;color:var(--gray-600);font-size:10.5px;font-style:normal">R$ 800.000</td><td style="padding:5px 8px;text-align:center;color:var(--gray-300);font-size:11px">—</td><td style="padding:5px 8px;text-align:center;color:var(--gray-300);font-size:11px">—</td><td style="padding:5px 8px;text-align:center;color:var(--gray-300);font-size:11px">—</td><td style="padding:5px 8px;text-align:center;color:var(--gray-300);font-size:11px">—</td><td style="padding:5px 8px;text-align:right;font-weight:700;color:var(--navy);font-size:10.5px;font-style:normal">R$ 800.000</td><td style="padding:5px 8px;text-align:center;color:var(--gray-300);font-size:11px">—</td></tr><tr style="border-bottom:1px solid var(--gray-100)"><td style="padding:5px 10px;font-weight:600;font-size:10.5px">P3.2 11 — Ativos e Passivos<span style="font-size:8.5px;font-weight:700;color:#fff;background:#1B2D7A;padding:1px 5px;border-radius:4px;margin-left:5px;vertical-align:middle">SACE</span></td><td style="padding:5px 8px;text-align:right;color:var(--gray-600);font-size:10.5px;font-style:normal">R$ 1.120.000</td><td style="padding:5px 8px;text-align:center;color:var(--gray-300);font-size:11px">—</td><td style="padding:5px 8px;text-align:center;color:var(--gray-300);font-size:11px">—</td><td style="padding:5px 8px;text-align:center;color:var(--gray-300);font-size:11px">—</td><td style="padding:5px 8px;text-align:center;color:var(--gray-300);font-size:11px">—</td><td style="padding:5px 8px;text-align:right;font-weight:700;color:var(--navy);font-size:10.5px;font-style:normal">R$ 1.120.000</td><td style="padding:5px 8px;text-align:center;color:var(--gray-300);font-size:11px">—</td></tr><tr style="border-bottom:1px solid var(--gray-100)"><td style="padding:5px 10px;font-weight:600;font-size:10.5px">P3.2 30 — Programação Financeira<span style="font-size:8.5px;font-weight:700;color:#fff;background:#4A2080;padding:1px 5px;border-radius:4px;margin-left:5px;vertical-align:middle">SATE</span></td><td style="padding:5px 8px;text-align:right;color:var(--gray-600);font-size:10.5px;font-style:normal">R$ 800.000</td><td style="padding:5px 8px;text-align:center;color:var(--gray-300);font-size:11px">—</td><td style="padding:5px 8px;text-align:center;color:var(--gray-300);font-size:11px">—</td><td style="padding:5px 8px;text-align:center;color:var(--gray-300);font-size:11px">—</td><td style="padding:5px 8px;text-align:center;color:var(--gray-300);font-size:11px">—</td><td style="padding:5px 8px;text-align:right;font-weight:700;color:var(--navy);font-size:10.5px;font-style:normal">R$ 800.000</td><td style="padding:5px 8px;text-align:center;color:var(--gray-300);font-size:11px">—</td></tr><tr style="border-bottom:1px solid var(--gray-100)"><td style="padding:5px 10px;font-weight:600;font-size:10.5px">P3.2 54.9 — RNF e Melhorias<span style="font-size:8.5px;font-weight:700;color:#fff;background:#1B2D7A;padding:1px 5px;border-radius:4px;margin-left:5px;vertical-align:middle">SACE</span></td><td style="padding:5px 8px;text-align:right;color:var(--gray-600);font-size:10.5px;font-style:normal">R$ 960.000</td><td style="padding:5px 8px;text-align:center;color:var(--gray-300);font-size:11px">—</td><td style="padding:5px 8px;text-align:center;color:var(--gray-300);font-size:11px">—</td><td style="padding:5px 8px;text-align:center;color:var(--gray-300);font-size:11px">—</td><td style="padding:5px 8px;text-align:center;color:var(--gray-300);font-size:11px">—</td><td style="padding:5px 8px;text-align:right;font-weight:700;color:var(--navy);font-size:10.5px;font-style:normal">R$ 960.000</td><td style="padding:5px 8px;text-align:center;color:var(--gray-300);font-size:11px">—</td></tr><tr style="border-top:2px solid #7A3A1A40;background:#7A3A1A18"><td style="padding:6px 10px;font-weight:800;font-size:10.5px;color:#7A3A1A">Subtotal Onda 5</td><td style="padding:6px 8px;text-align:right;font-weight:800;color:var(--gray-600)">R$ 3.680.000</td><td style="padding:5px 8px;text-align:center;color:var(--gray-300);font-size:11px">—</td><td style="padding:5px 8px;text-align:center;color:var(--gray-300);font-size:11px">—</td><td style="padding:5px 8px;text-align:center;color:var(--gray-300);font-size:11px">—</td><td style="padding:5px 8px;text-align:center;color:var(--gray-300);font-size:11px">—</td><td style="padding:6px 8px;text-align:right;font-weight:800;color:var(--navy)">R$ 3.680.000</td><td style="padding:5px 8px;text-align:center;color:var(--gray-300);font-size:11px">—</td></tr><tr style="background:#1B2D7A;border-top:3px solid #FFD98A"><td style="padding:8px 10px;font-weight:900;color:#FFD98A;font-size:11.5px">PROGRAMA TOTAL (Ondas 1–5)</td><td style="padding:8px 8px;text-align:right;font-weight:700;color:rgba(255,255,255,.65)">R$ 16.000.000</td><td colspan="4" style="padding:8px 8px;text-align:center;color:rgba(255,255,255,.5);font-size:10px;font-style:italic">Ondas 3–5 pendentes de dimensionamento</td><td style="padding:8px 8px;text-align:right;font-weight:900;color:#FFD98A;font-size:11.5px">R$ 13.773.831</td><td style="padding:8px 8px;text-align:right;font-weight:900;color:#A0FFD0">−R$ 2.226.169</td></tr>
+            <tr style="background:#1A7A4A"><td colspan="8" style="padding:6px 12px;font-size:10.5px;font-weight:800;color:#fff;letter-spacing:.2px">● ONDA 1 — Em Homologação  ·  mar/26 → jul/26  ·  Dimensionado (Catálogo C3SW)</td></tr><tr style="border-bottom:1px solid var(--gray-100)"><td style="padding:5px 10px;font-weight:600;font-size:10.5px">P3.2 07 — Patrimônio SISPAT<span style="font-size:8.5px;font-weight:700;color:#fff;background:#1B2D7A;padding:1px 5px;border-radius:4px;margin-left:5px;vertical-align:middle">SACE</span></td><td style="padding:5px 8px;text-align:right;color:var(--gray-600);font-size:10.5px;font-style:normal">R$ 800.000</td><td style="padding:5px 8px;text-align:right;color:var(--gray-600);font-size:10.5px">56,50</td><td style="padding:5px 8px;text-align:right;color:var(--gray-600);font-size:10.5px">R$ 9.040</td><td style="padding:5px 8px;text-align:right;color:var(--gray-600);font-size:10.5px">2.418,72</td><td style="padding:5px 8px;text-align:right;color:var(--gray-600);font-size:10.5px">R$ 386.995</td><td style="padding:5px 8px;text-align:right;font-weight:700;color:var(--navy);font-size:10.5px;font-style:normal">R$ 396.035</td><td style="padding:5px 8px;text-align:right;font-weight:700;font-size:10.5px;color:var(--green)">−R$ 403.965</td></tr><tr style="border-bottom:1px solid var(--gray-100)"><td style="padding:5px 10px;font-weight:600;font-size:10.5px">P3.2 33 — Sol. e Autorizações<span style="font-size:8.5px;font-weight:700;color:#fff;background:#4A2080;padding:1px 5px;border-radius:4px;margin-left:5px;vertical-align:middle">SATE</span></td><td style="padding:5px 8px;text-align:right;color:var(--gray-600);font-size:10.5px;font-style:normal">R$ 800.000</td><td style="padding:5px 8px;text-align:center;color:var(--gray-300);font-size:11px">—</td><td style="padding:5px 8px;text-align:center;color:var(--gray-300);font-size:11px">—</td><td style="padding:5px 8px;text-align:right;color:var(--gray-600);font-size:10.5px">2.254,34</td><td style="padding:5px 8px;text-align:right;color:var(--gray-600);font-size:10.5px">R$ 360.694</td><td style="padding:5px 8px;text-align:right;font-weight:700;color:var(--navy);font-size:10.5px;font-style:normal">R$ 360.694</td><td style="padding:5px 8px;text-align:right;font-weight:700;font-size:10.5px;color:var(--green)">−R$ 439.306</td></tr><tr style="border-top:2px solid #1A7A4A40;background:#1A7A4A18"><td style="padding:6px 10px;font-weight:800;font-size:10.5px;color:#1A7A4A">Subtotal Onda 1</td><td style="padding:6px 8px;text-align:right;font-weight:800;color:var(--gray-600)">R$ 1.600.000</td><td style="padding:6px 8px;text-align:right;font-weight:800;color:#1A7A4A">56,50</td><td style="padding:6px 8px;text-align:right;font-weight:800;color:#1A7A4A">R$ 9.040</td><td style="padding:6px 8px;text-align:right;font-weight:800;color:#1A7A4A">4.673,06</td><td style="padding:6px 8px;text-align:right;font-weight:800;color:#1A7A4A">R$ 747.690</td><td style="padding:6px 8px;text-align:right;font-weight:800;color:var(--navy)">R$ 756.730</td><td style="padding:6px 8px;text-align:right;font-weight:800;color:var(--green)">−R$ 843.270</td></tr><tr style="background:#6B3FA0"><td colspan="8" style="padding:6px 12px;font-size:10.5px;font-weight:800;color:#fff;letter-spacing:.2px">● ONDA 2 — Em Desenvolvimento  ·  mai/26 → ago/26  ·  Dimensionado (Catálogo C3SW)</td></tr><tr style="border-bottom:1px solid var(--gray-100)"><td style="padding:5px 10px;font-weight:600;font-size:10.5px">P3.2 05 — SIAG Contratos<span style="font-size:8.5px;font-weight:700;color:#fff;background:#1B2D7A;padding:1px 5px;border-radius:4px;margin-left:5px;vertical-align:middle">SACE</span></td><td style="padding:5px 8px;text-align:right;color:var(--gray-600);font-size:10.5px;font-style:normal">R$ 800.000</td><td style="padding:5px 8px;text-align:right;color:var(--gray-600);font-size:10.5px">56,50</td><td style="padding:5px 8px;text-align:right;color:var(--gray-600);font-size:10.5px">R$ 9.040</td><td style="padding:5px 8px;text-align:right;color:var(--gray-600);font-size:10.5px">3.759,99</td><td style="padding:5px 8px;text-align:right;color:var(--gray-600);font-size:10.5px">R$ 601.598</td><td style="padding:5px 8px;text-align:right;font-weight:700;color:var(--navy);font-size:10.5px;font-style:normal">R$ 610.638</td><td style="padding:5px 8px;text-align:right;font-weight:700;font-size:10.5px;color:var(--green)">−R$ 189.362</td></tr><tr style="border-bottom:1px solid var(--gray-100)"><td style="padding:5px 10px;font-weight:600;font-size:10.5px">P3.2 01 — SIAG Aquisições<span style="font-size:8.5px;font-weight:700;color:#fff;background:#1B2D7A;padding:1px 5px;border-radius:4px;margin-left:5px;vertical-align:middle">SACE</span></td><td style="padding:5px 8px;text-align:right;color:var(--gray-600);font-size:10.5px;font-style:italic">A definir</td><td style="padding:5px 8px;text-align:right;color:var(--gray-600);font-size:10.5px">56,50</td><td style="padding:5px 8px;text-align:right;color:var(--gray-600);font-size:10.5px">R$ 9.040</td><td style="padding:5px 8px;text-align:right;color:var(--gray-600);font-size:10.5px">1.730,22</td><td style="padding:5px 8px;text-align:right;color:var(--gray-600);font-size:10.5px">R$ 276.835</td><td style="padding:5px 8px;text-align:right;font-weight:700;color:var(--navy);font-size:10.5px;font-style:normal">R$ 285.875</td><td style="padding:5px 8px;text-align:center;color:var(--gray-300);font-size:11px">—</td></tr><tr style="border-bottom:1px solid var(--gray-100)"><td style="padding:5px 10px;font-weight:600;font-size:10.5px">P3.2 01.01 — PED/EMP Subelemento<span style="font-size:8.5px;font-weight:700;color:#fff;background:#1B2D7A;padding:1px 5px;border-radius:4px;margin-left:5px;vertical-align:middle">SACE</span></td><td style="padding:5px 8px;text-align:right;color:var(--gray-600);font-size:10.5px;font-style:italic">A definir</td><td style="padding:5px 8px;text-align:right;color:var(--gray-600);font-size:10.5px">56,50</td><td style="padding:5px 8px;text-align:right;color:var(--gray-600);font-size:10.5px">R$ 9.040</td><td style="padding:5px 8px;text-align:right;color:var(--gray-600);font-size:10.5px">1.823,85</td><td style="padding:5px 8px;text-align:right;color:var(--gray-600);font-size:10.5px">R$ 291.816</td><td style="padding:5px 8px;text-align:right;font-weight:700;color:var(--navy);font-size:10.5px;font-style:normal">R$ 300.856</td><td style="padding:5px 8px;text-align:center;color:var(--gray-300);font-size:11px">—</td></tr><tr style="border-bottom:1px solid var(--gray-100)"><td style="padding:5px 10px;font-weight:600;font-size:10.5px">P3.2 02 — Receita Integrada<span style="font-size:8.5px;font-weight:700;color:#fff;background:#1B2D7A;padding:1px 5px;border-radius:4px;margin-left:5px;vertical-align:middle">SACE</span></td><td style="padding:5px 8px;text-align:right;color:var(--gray-600);font-size:10.5px;font-style:normal">R$ 1.120.000</td><td style="padding:5px 8px;text-align:center;color:var(--gray-300);font-size:11px">—</td><td style="padding:5px 8px;text-align:center;color:var(--gray-300);font-size:11px">—</td><td style="padding:5px 8px;text-align:right;color:var(--gray-600);font-size:10.5px">1.732,72</td><td style="padding:5px 8px;text-align:right;color:var(--gray-600);font-size:10.5px">R$ 277.235</td><td style="padding:5px 8px;text-align:right;font-weight:700;color:var(--navy);font-size:10.5px;font-style:normal">R$ 277.235</td><td style="padding:5px 8px;text-align:right;font-weight:700;font-size:10.5px;color:var(--green)">−R$ 842.765</td></tr><tr style="border-bottom:1px solid var(--gray-100)"><td style="padding:5px 10px;font-weight:600;font-size:10.5px">P3.2 03 — Folha de Pagamento<span style="font-size:8.5px;font-weight:700;color:#fff;background:#1B2D7A;padding:1px 5px;border-radius:4px;margin-left:5px;vertical-align:middle">SACE</span></td><td style="padding:5px 8px;text-align:right;color:var(--gray-600);font-size:10.5px;font-style:normal">R$ 1.280.000</td><td style="padding:5px 8px;text-align:center;color:var(--gray-300);font-size:11px">—</td><td style="padding:5px 8px;text-align:center;color:var(--gray-300);font-size:11px">—</td><td style="padding:5px 8px;text-align:right;color:var(--gray-600);font-size:10.5px">4.740,00</td><td style="padding:5px 8px;text-align:right;color:var(--gray-600);font-size:10.5px">R$ 758.400</td><td style="padding:5px 8px;text-align:right;font-weight:700;color:var(--navy);font-size:10.5px;font-style:normal">R$ 758.400</td><td style="padding:5px 8px;text-align:right;font-weight:700;font-size:10.5px;color:var(--green)">−R$ 521.600</td></tr><tr style="border-bottom:1px solid var(--gray-100)"><td style="padding:5px 10px;font-weight:600;font-size:10.5px">P3.2 20 — Previsão de Receitas<span style="font-size:8.5px;font-weight:700;color:#fff;background:#1A5A9A;padding:1px 5px;border-radius:4px;margin-left:5px;vertical-align:middle">SAOR</span></td><td style="padding:5px 8px;text-align:right;color:var(--gray-600);font-size:10.5px;font-style:normal">R$ 640.000</td><td style="padding:5px 8px;text-align:right;color:var(--gray-600);font-size:10.5px">1.821,97</td><td style="padding:5px 8px;text-align:right;color:var(--gray-600);font-size:10.5px">R$ 291.515</td><td style="padding:5px 8px;text-align:right;color:var(--gray-600);font-size:10.5px">6.489,26</td><td style="padding:5px 8px;text-align:right;color:var(--gray-600);font-size:10.5px">R$ 1.038.282</td><td style="padding:5px 8px;text-align:right;font-weight:700;color:var(--navy);font-size:10.5px;font-style:normal">R$ 1.329.797</td><td style="padding:5px 8px;text-align:right;font-weight:700;font-size:10.5px;color:var(--red)">+R$ 689.797 ⬆</td></tr><tr style="border-top:2px solid #6B3FA040;background:#6B3FA018"><td style="padding:6px 10px;font-weight:800;font-size:10.5px;color:#6B3FA0">Subtotal Onda 2</td><td style="padding:6px 8px;text-align:right;font-weight:800;color:var(--gray-600)">R$ 3.840.000 ²</td><td style="padding:6px 8px;text-align:right;font-weight:800;color:#6B3FA0">1.991,47</td><td style="padding:6px 8px;text-align:right;font-weight:800;color:#6B3FA0">R$ 318.635</td><td style="padding:6px 8px;text-align:right;font-weight:800;color:#6B3FA0">20.276,04</td><td style="padding:6px 8px;text-align:right;font-weight:800;color:#6B3FA0">R$ 3.244.166</td><td style="padding:6px 8px;text-align:right;font-weight:800;color:var(--navy)">R$ 3.562.802</td><td style="padding:6px 8px;text-align:right;font-weight:800;color:var(--green)">−R$ 863.930</td></tr><tr style="background:#E8EDFA;border-top:3px solid var(--navy)"><td style="padding:7px 10px;font-weight:900;color:var(--navy);font-size:11px">TOTAL DIMENSIONADO (Ondas 1+2)</td><td style="padding:7px 8px;text-align:right;font-weight:700;color:var(--gray-600)">R$ 5.440.000</td><td style="padding:7px 8px;text-align:right;font-weight:900;color:var(--navy)">2.047,97</td><td style="padding:7px 8px;text-align:right;font-weight:900;color:var(--navy)">R$ 327.675</td><td style="padding:7px 8px;text-align:right;font-weight:900;color:var(--navy)">24.949,10</td><td style="padding:7px 8px;text-align:right;font-weight:900;color:var(--navy)">R$ 3.991.856</td><td style="padding:7px 8px;text-align:right;font-weight:900;color:var(--navy);font-size:11px">R$ 4.319.531</td><td style="padding:7px 8px;text-align:right;font-weight:900;color:var(--green);font-size:11px">−R$ 1.120.469</td></tr><tr style="background:#1A5A9A"><td colspan="8" style="padding:6px 12px;font-size:10.5px;font-weight:800;color:#fff;letter-spacing:.2px">● ONDA 3 — Programada  ·  ago/26 → nov/26  ·  Estimado (a dimensionar)</td></tr><tr style="border-bottom:1px solid var(--gray-100)"><td style="padding:5px 10px;font-weight:600;font-size:10.5px">P3.2 19 — Orç. Cidadão Digital<span style="font-size:8.5px;font-weight:700;color:#fff;background:#1A5A9A;padding:1px 5px;border-radius:4px;margin-left:5px;vertical-align:middle">SAOR</span></td><td style="padding:5px 8px;text-align:right;color:var(--gray-600);font-size:10.5px;font-style:normal">R$ 480.000</td><td style="padding:5px 8px;text-align:center;color:var(--gray-300);font-size:11px">—</td><td style="padding:5px 8px;text-align:center;color:var(--gray-300);font-size:11px">—</td><td style="padding:5px 8px;text-align:center;color:var(--gray-300);font-size:11px">—</td><td style="padding:5px 8px;text-align:center;color:var(--gray-300);font-size:11px">—</td><td style="padding:5px 8px;text-align:right;font-weight:700;color:var(--navy);font-size:10.5px;font-style:normal">R$ 480.000</td><td style="padding:5px 8px;text-align:center;color:var(--gray-300);font-size:11px">—</td></tr><tr style="border-bottom:1px solid var(--gray-100)"><td style="padding:5px 10px;font-weight:600;font-size:10.5px">P3.2 14 — Orç. p/ Resultado<span style="font-size:8.5px;font-weight:700;color:#fff;background:#1A5A9A;padding:1px 5px;border-radius:4px;margin-left:5px;vertical-align:middle">SAOR</span></td><td style="padding:5px 8px;text-align:right;color:var(--gray-600);font-size:10.5px;font-style:normal">R$ 800.000</td><td style="padding:5px 8px;text-align:center;color:var(--gray-300);font-size:11px">—</td><td style="padding:5px 8px;text-align:center;color:var(--gray-300);font-size:11px">—</td><td style="padding:5px 8px;text-align:center;color:var(--gray-300);font-size:11px">—</td><td style="padding:5px 8px;text-align:center;color:var(--gray-300);font-size:11px">—</td><td style="padding:5px 8px;text-align:right;font-weight:700;color:var(--navy);font-size:10.5px;font-style:normal">R$ 800.000</td><td style="padding:5px 8px;text-align:center;color:var(--gray-300);font-size:11px">—</td></tr><tr style="border-bottom:1px solid var(--gray-100)"><td style="padding:5px 10px;font-weight:600;font-size:10.5px">P3.2 10 — Precatórios<span style="font-size:8.5px;font-weight:700;color:#fff;background:#1B2D7A;padding:1px 5px;border-radius:4px;margin-left:5px;vertical-align:middle">SACE</span></td><td style="padding:5px 8px;text-align:right;color:var(--gray-600);font-size:10.5px;font-style:normal">R$ 640.000</td><td style="padding:5px 8px;text-align:center;color:var(--gray-300);font-size:11px">—</td><td style="padding:5px 8px;text-align:center;color:var(--gray-300);font-size:11px">—</td><td style="padding:5px 8px;text-align:center;color:var(--gray-300);font-size:11px">—</td><td style="padding:5px 8px;text-align:center;color:var(--gray-300);font-size:11px">—</td><td style="padding:5px 8px;text-align:right;font-weight:700;color:var(--navy);font-size:10.5px;font-style:normal">R$ 640.000</td><td style="padding:5px 8px;text-align:center;color:var(--gray-300);font-size:11px">—</td></tr><tr style="border-bottom:1px solid var(--gray-100)"><td style="padding:5px 10px;font-weight:600;font-size:10.5px">P3.2 35 — Duodécimo<span style="font-size:8.5px;font-weight:700;color:#fff;background:#4A2080;padding:1px 5px;border-radius:4px;margin-left:5px;vertical-align:middle">SATE</span></td><td style="padding:5px 8px;text-align:right;color:var(--gray-600);font-size:10.5px;font-style:normal">R$ 640.000</td><td style="padding:5px 8px;text-align:center;color:var(--gray-300);font-size:11px">—</td><td style="padding:5px 8px;text-align:center;color:var(--gray-300);font-size:11px">—</td><td style="padding:5px 8px;text-align:center;color:var(--gray-300);font-size:11px">—</td><td style="padding:5px 8px;text-align:center;color:var(--gray-300);font-size:11px">—</td><td style="padding:5px 8px;text-align:right;font-weight:700;color:var(--navy);font-size:10.5px;font-style:normal">R$ 640.000</td><td style="padding:5px 8px;text-align:center;color:var(--gray-300);font-size:11px">—</td></tr><tr style="border-bottom:1px solid var(--gray-100)"><td style="padding:5px 10px;font-weight:600;font-size:10.5px">GIP-MT — Gestão Inv. Público ↑<span style="font-size:8.5px;font-weight:700;color:#fff;background:#1B2D7A;padding:1px 5px;border-radius:4px;margin-left:5px;vertical-align:middle">SACE</span></td><td style="padding:5px 8px;text-align:right;color:var(--gray-600);font-size:10.5px;font-style:normal">R$ 640.000</td><td style="padding:5px 8px;text-align:center;color:var(--gray-300);font-size:11px">—</td><td style="padding:5px 8px;text-align:center;color:var(--gray-300);font-size:11px">—</td><td style="padding:5px 8px;text-align:center;color:var(--gray-300);font-size:11px">—</td><td style="padding:5px 8px;text-align:center;color:var(--gray-300);font-size:11px">—</td><td style="padding:5px 8px;text-align:right;font-weight:700;color:var(--navy);font-size:10.5px;font-style:normal">R$ 640.000</td><td style="padding:5px 8px;text-align:center;color:var(--gray-300);font-size:11px">—</td></tr><tr style="border-bottom:1px solid var(--gray-100)"><td style="padding:5px 10px;font-weight:600;font-size:10.5px">P3.2 08 — Dívida Pública ↑<span style="font-size:8.5px;font-weight:700;color:#fff;background:#1B2D7A;padding:1px 5px;border-radius:4px;margin-left:5px;vertical-align:middle">SACE</span></td><td style="padding:5px 8px;text-align:right;color:var(--gray-600);font-size:10.5px;font-style:normal">R$ 960.000</td><td style="padding:5px 8px;text-align:center;color:var(--gray-300);font-size:11px">—</td><td style="padding:5px 8px;text-align:center;color:var(--gray-300);font-size:11px">—</td><td style="padding:5px 8px;text-align:center;color:var(--gray-300);font-size:11px">—</td><td style="padding:5px 8px;text-align:center;color:var(--gray-300);font-size:11px">—</td><td style="padding:5px 8px;text-align:right;font-weight:700;color:var(--navy);font-size:10.5px;font-style:normal">R$ 960.000</td><td style="padding:5px 8px;text-align:center;color:var(--gray-300);font-size:11px">—</td></tr><tr style="border-top:2px solid #1A5A9A40;background:#1A5A9A18"><td style="padding:6px 10px;font-weight:800;font-size:10.5px;color:#1A5A9A">Subtotal Onda 3</td><td style="padding:6px 8px;text-align:right;font-weight:800;color:var(--gray-600)">R$ 4.160.000</td><td style="padding:5px 8px;text-align:center;color:var(--gray-300);font-size:11px">—</td><td style="padding:5px 8px;text-align:center;color:var(--gray-300);font-size:11px">—</td><td style="padding:5px 8px;text-align:center;color:var(--gray-300);font-size:11px">—</td><td style="padding:5px 8px;text-align:center;color:var(--gray-300);font-size:11px">—</td><td style="padding:6px 8px;text-align:right;font-weight:800;color:var(--navy)">R$ 4.160.000</td><td style="padding:5px 8px;text-align:center;color:var(--gray-300);font-size:11px">—</td></tr><tr style="background:#1A6B4A"><td colspan="8" style="padding:6px 12px;font-size:10.5px;font-weight:800;color:#fff;letter-spacing:.2px">● ONDA 4 — Programada  ·  nov/26 → fev/27  ·  Estimado  ·  ⚠️ Pico 6 SPs</td></tr><tr style="border-bottom:1px solid var(--gray-100)"><td style="padding:5px 10px;font-weight:600;font-size:10.5px">P3.2 54.6 — NF-e<span style="font-size:8.5px;font-weight:700;color:#fff;background:#1B2D7A;padding:1px 5px;border-radius:4px;margin-left:5px;vertical-align:middle">SACE</span></td><td style="padding:5px 8px;text-align:right;color:var(--gray-600);font-size:10.5px;font-style:normal">R$ 640.000</td><td style="padding:5px 8px;text-align:center;color:var(--gray-300);font-size:11px">—</td><td style="padding:5px 8px;text-align:center;color:var(--gray-300);font-size:11px">—</td><td style="padding:5px 8px;text-align:center;color:var(--gray-300);font-size:11px">—</td><td style="padding:5px 8px;text-align:center;color:var(--gray-300);font-size:11px">—</td><td style="padding:5px 8px;text-align:right;font-weight:700;color:var(--navy);font-size:10.5px;font-style:normal">R$ 640.000</td><td style="padding:5px 8px;text-align:center;color:var(--gray-300);font-size:11px">—</td></tr><tr style="border-bottom:1px solid var(--gray-100)"><td style="padding:5px 10px;font-weight:600;font-size:10.5px">P3.2 47 — Monitora Monitoramento<span style="font-size:8.5px;font-weight:700;color:#fff;background:#1A6B4A;padding:1px 5px;border-radius:4px;margin-left:5px;vertical-align:middle">SEPLAG</span></td><td style="padding:5px 8px;text-align:right;color:var(--gray-600);font-size:10.5px;font-style:normal">R$ 480.000</td><td style="padding:5px 8px;text-align:center;color:var(--gray-300);font-size:11px">—</td><td style="padding:5px 8px;text-align:center;color:var(--gray-300);font-size:11px">—</td><td style="padding:5px 8px;text-align:center;color:var(--gray-300);font-size:11px">—</td><td style="padding:5px 8px;text-align:center;color:var(--gray-300);font-size:11px">—</td><td style="padding:5px 8px;text-align:right;font-weight:700;color:var(--navy);font-size:10.5px;font-style:normal">R$ 480.000</td><td style="padding:5px 8px;text-align:center;color:var(--gray-300);font-size:11px">—</td></tr><tr style="border-bottom:1px solid var(--gray-100)"><td style="padding:5px 10px;font-weight:600;font-size:10.5px">P3.2 48 — Monitora RAG<span style="font-size:8.5px;font-weight:700;color:#fff;background:#1A6B4A;padding:1px 5px;border-radius:4px;margin-left:5px;vertical-align:middle">SEPLAG</span></td><td style="padding:5px 8px;text-align:right;color:var(--gray-600);font-size:10.5px;font-style:normal">R$ 480.000</td><td style="padding:5px 8px;text-align:center;color:var(--gray-300);font-size:11px">—</td><td style="padding:5px 8px;text-align:center;color:var(--gray-300);font-size:11px">—</td><td style="padding:5px 8px;text-align:center;color:var(--gray-300);font-size:11px">—</td><td style="padding:5px 8px;text-align:center;color:var(--gray-300);font-size:11px">—</td><td style="padding:5px 8px;text-align:right;font-weight:700;color:var(--navy);font-size:10.5px;font-style:normal">R$ 480.000</td><td style="padding:5px 8px;text-align:center;color:var(--gray-300);font-size:11px">—</td></tr><tr style="border-bottom:1px solid var(--gray-100)"><td style="padding:5px 10px;font-weight:600;font-size:10.5px">P3.2 52 — Consulta Pública<span style="font-size:8.5px;font-weight:700;color:#fff;background:#1A6B4A;padding:1px 5px;border-radius:4px;margin-left:5px;vertical-align:middle">SEPLAG</span></td><td style="padding:5px 8px;text-align:right;color:var(--gray-600);font-size:10.5px;font-style:normal">R$ 160.000</td><td style="padding:5px 8px;text-align:center;color:var(--gray-300);font-size:11px">—</td><td style="padding:5px 8px;text-align:center;color:var(--gray-300);font-size:11px">—</td><td style="padding:5px 8px;text-align:center;color:var(--gray-300);font-size:11px">—</td><td style="padding:5px 8px;text-align:center;color:var(--gray-300);font-size:11px">—</td><td style="padding:5px 8px;text-align:right;font-weight:700;color:var(--navy);font-size:10.5px;font-style:normal">R$ 160.000</td><td style="padding:5px 8px;text-align:center;color:var(--gray-300);font-size:11px">—</td></tr><tr style="border-bottom:1px solid var(--gray-100)"><td style="padding:5px 10px;font-weight:600;font-size:10.5px">P3.2 04 — Integração SET<span style="font-size:8.5px;font-weight:700;color:#fff;background:#1B2D7A;padding:1px 5px;border-radius:4px;margin-left:5px;vertical-align:middle">SACE</span></td><td style="padding:5px 8px;text-align:right;color:var(--gray-600);font-size:10.5px;font-style:normal">R$ 640.000</td><td style="padding:5px 8px;text-align:center;color:var(--gray-300);font-size:11px">—</td><td style="padding:5px 8px;text-align:center;color:var(--gray-300);font-size:11px">—</td><td style="padding:5px 8px;text-align:center;color:var(--gray-300);font-size:11px">—</td><td style="padding:5px 8px;text-align:center;color:var(--gray-300);font-size:11px">—</td><td style="padding:5px 8px;text-align:right;font-weight:700;color:var(--navy);font-size:10.5px;font-style:normal">R$ 640.000</td><td style="padding:5px 8px;text-align:center;color:var(--gray-300);font-size:11px">—</td></tr><tr style="border-bottom:1px solid var(--gray-100)"><td style="padding:5px 10px;font-weight:600;font-size:10.5px">P3.2 53 — Orientações Estratégicas<span style="font-size:8.5px;font-weight:700;color:#fff;background:#1A6B4A;padding:1px 5px;border-radius:4px;margin-left:5px;vertical-align:middle">SEPLAG</span></td><td style="padding:5px 8px;text-align:right;color:var(--gray-600);font-size:10.5px;font-style:normal">R$ 320.000</td><td style="padding:5px 8px;text-align:center;color:var(--gray-300);font-size:11px">—</td><td style="padding:5px 8px;text-align:center;color:var(--gray-300);font-size:11px">—</td><td style="padding:5px 8px;text-align:center;color:var(--gray-300);font-size:11px">—</td><td style="padding:5px 8px;text-align:center;color:var(--gray-300);font-size:11px">—</td><td style="padding:5px 8px;text-align:right;font-weight:700;color:var(--navy);font-size:10.5px;font-style:normal">R$ 320.000</td><td style="padding:5px 8px;text-align:center;color:var(--gray-300);font-size:11px">—</td></tr><tr style="border-top:2px solid #1A6B4A40;background:#1A6B4A18"><td style="padding:6px 10px;font-weight:800;font-size:10.5px;color:#1A6B4A">Subtotal Onda 4</td><td style="padding:6px 8px;text-align:right;font-weight:800;color:var(--gray-600)">R$ 2.720.000</td><td style="padding:5px 8px;text-align:center;color:var(--gray-300);font-size:11px">—</td><td style="padding:5px 8px;text-align:center;color:var(--gray-300);font-size:11px">—</td><td style="padding:5px 8px;text-align:center;color:var(--gray-300);font-size:11px">—</td><td style="padding:5px 8px;text-align:center;color:var(--gray-300);font-size:11px">—</td><td style="padding:6px 8px;text-align:right;font-weight:800;color:var(--navy)">R$ 2.720.000</td><td style="padding:5px 8px;text-align:center;color:var(--gray-300);font-size:11px">—</td></tr><tr style="background:#7A3A1A"><td colspan="8" style="padding:6px 12px;font-size:10.5px;font-weight:800;color:#fff;letter-spacing:.2px">● ONDA 5 — Programada  ·  fev/27 → mai/27  ·  Estimado (a dimensionar)</td></tr><tr style="border-bottom:1px solid var(--gray-100)"><td style="padding:5px 10px;font-weight:600;font-size:10.5px">P3.2 31 — Fluxo de Caixa<span style="font-size:8.5px;font-weight:700;color:#fff;background:#4A2080;padding:1px 5px;border-radius:4px;margin-left:5px;vertical-align:middle">SATE</span></td><td style="padding:5px 8px;text-align:right;color:var(--gray-600);font-size:10.5px;font-style:normal">R$ 800.000</td><td style="padding:5px 8px;text-align:center;color:var(--gray-300);font-size:11px">—</td><td style="padding:5px 8px;text-align:center;color:var(--gray-300);font-size:11px">—</td><td style="padding:5px 8px;text-align:center;color:var(--gray-300);font-size:11px">—</td><td style="padding:5px 8px;text-align:center;color:var(--gray-300);font-size:11px">—</td><td style="padding:5px 8px;text-align:right;font-weight:700;color:var(--navy);font-size:10.5px;font-style:normal">R$ 800.000</td><td style="padding:5px 8px;text-align:center;color:var(--gray-300);font-size:11px">—</td></tr><tr style="border-bottom:1px solid var(--gray-100)"><td style="padding:5px 10px;font-weight:600;font-size:10.5px">P3.2 11 — Ativos e Passivos<span style="font-size:8.5px;font-weight:700;color:#fff;background:#1B2D7A;padding:1px 5px;border-radius:4px;margin-left:5px;vertical-align:middle">SACE</span></td><td style="padding:5px 8px;text-align:right;color:var(--gray-600);font-size:10.5px;font-style:normal">R$ 1.120.000</td><td style="padding:5px 8px;text-align:center;color:var(--gray-300);font-size:11px">—</td><td style="padding:5px 8px;text-align:center;color:var(--gray-300);font-size:11px">—</td><td style="padding:5px 8px;text-align:center;color:var(--gray-300);font-size:11px">—</td><td style="padding:5px 8px;text-align:center;color:var(--gray-300);font-size:11px">—</td><td style="padding:5px 8px;text-align:right;font-weight:700;color:var(--navy);font-size:10.5px;font-style:normal">R$ 1.120.000</td><td style="padding:5px 8px;text-align:center;color:var(--gray-300);font-size:11px">—</td></tr><tr style="border-bottom:1px solid var(--gray-100)"><td style="padding:5px 10px;font-weight:600;font-size:10.5px">P3.2 30 — Programação Financeira<span style="font-size:8.5px;font-weight:700;color:#fff;background:#4A2080;padding:1px 5px;border-radius:4px;margin-left:5px;vertical-align:middle">SATE</span></td><td style="padding:5px 8px;text-align:right;color:var(--gray-600);font-size:10.5px;font-style:normal">R$ 800.000</td><td style="padding:5px 8px;text-align:center;color:var(--gray-300);font-size:11px">—</td><td style="padding:5px 8px;text-align:center;color:var(--gray-300);font-size:11px">—</td><td style="padding:5px 8px;text-align:center;color:var(--gray-300);font-size:11px">—</td><td style="padding:5px 8px;text-align:center;color:var(--gray-300);font-size:11px">—</td><td style="padding:5px 8px;text-align:right;font-weight:700;color:var(--navy);font-size:10.5px;font-style:normal">R$ 800.000</td><td style="padding:5px 8px;text-align:center;color:var(--gray-300);font-size:11px">—</td></tr><tr style="border-bottom:1px solid var(--gray-100)"><td style="padding:5px 10px;font-weight:600;font-size:10.5px">P3.2 54.9 — RNF e Melhorias<span style="font-size:8.5px;font-weight:700;color:#fff;background:#1B2D7A;padding:1px 5px;border-radius:4px;margin-left:5px;vertical-align:middle">SACE</span></td><td style="padding:5px 8px;text-align:right;color:var(--gray-600);font-size:10.5px;font-style:normal">R$ 960.000</td><td style="padding:5px 8px;text-align:center;color:var(--gray-300);font-size:11px">—</td><td style="padding:5px 8px;text-align:center;color:var(--gray-300);font-size:11px">—</td><td style="padding:5px 8px;text-align:center;color:var(--gray-300);font-size:11px">—</td><td style="padding:5px 8px;text-align:center;color:var(--gray-300);font-size:11px">—</td><td style="padding:5px 8px;text-align:right;font-weight:700;color:var(--navy);font-size:10.5px;font-style:normal">R$ 960.000</td><td style="padding:5px 8px;text-align:center;color:var(--gray-300);font-size:11px">—</td></tr><tr style="border-top:2px solid #7A3A1A40;background:#7A3A1A18"><td style="padding:6px 10px;font-weight:800;font-size:10.5px;color:#7A3A1A">Subtotal Onda 5</td><td style="padding:6px 8px;text-align:right;font-weight:800;color:var(--gray-600)">R$ 3.680.000</td><td style="padding:5px 8px;text-align:center;color:var(--gray-300);font-size:11px">—</td><td style="padding:5px 8px;text-align:center;color:var(--gray-300);font-size:11px">—</td><td style="padding:5px 8px;text-align:center;color:var(--gray-300);font-size:11px">—</td><td style="padding:5px 8px;text-align:center;color:var(--gray-300);font-size:11px">—</td><td style="padding:6px 8px;text-align:right;font-weight:800;color:var(--navy)">R$ 3.680.000</td><td style="padding:5px 8px;text-align:center;color:var(--gray-300);font-size:11px">—</td></tr><tr style="background:#1B2D7A;border-top:3px solid #FFD98A"><td style="padding:8px 10px;font-weight:900;color:#FFD98A;font-size:11.5px">PROGRAMA TOTAL (Ondas 1–5)</td><td style="padding:8px 8px;text-align:right;font-weight:700;color:rgba(255,255,255,.65)">R$ 16.000.000</td><td colspan="4" style="padding:8px 8px;text-align:center;color:rgba(255,255,255,.5);font-size:10px;font-style:italic">Ondas 3–5 pendentes de dimensionamento</td><td style="padding:8px 8px;text-align:right;font-weight:900;color:#FFD98A;font-size:11.5px">R$ 14.879.531</td><td style="padding:8px 8px;text-align:right;font-weight:900;color:#A0FFD0">−R$ 1.120.469</td></tr>
           </tbody>
         </table>
         </div>
         <div style="font-size:10px;color:var(--gray-600);margin-top:10px;line-height:1.6;background:var(--gold-light);border:1px solid #E8C870;border-left:3px solid var(--gold);border-radius:6px;padding:10px 14px">
           ⚠️ <strong>Ondas 1+2 formalmente dimensionadas</strong> pelo Catálogo C3SW v1.1 (Contrato 022/2024/PROFISCO II). Ondas 3–5 referenciais — sujeitas a dimensionamento formal na abertura de cada onda.<br>
-          ¹ SP33 — OS Visão (56,50 USTs) quitada pela MTI/Loglab; USTs contabilizadas mas custo R$0 neste contrato.&nbsp;&middot;&nbsp; SP05 — totalVisaoUst=0 no JSON (USTs de visão incorporadas ao delivery ou quitadas anteriormente).<br>
           ² Subtotal Onda 2 considera apenas SPs com estimativa inicial disponível para cálculo do Δ.
         </div>
       </div>
@@ -1457,7 +1450,7 @@ body{font-family:'Segoe UI',Arial,sans-serif;background:var(--gray-50);color:var
 <script>
 // ── DATA ──────────────────────────────────────────────────────────────────
 const SPS = [
-  {id:'SP05',code:'P3.2 05',nome:'Integração SIAG-C — FIPLAN',status:'dev',onda:1,periodo:'mar/26 → jul/26',gestor:'CPGC / SACE',projeto:'PRJ0031577',valor:'OS Visão: 56,50 USTs (R$ 9.040,00) — OS Delivery: 3.487,25 USTs (R$ 557.960,00) — Total: 3.543,75 USTs — R$ 567.000,00',
+  {id:'SP05',code:'P3.2 05',nome:'Integração SIAG-C — FIPLAN',status:'dev',onda:2,periodo:'mai/26 → ago/26',gestor:'CPGC / SACE',projeto:'PRJ0031577',valor:'OS Visão: 56,50 USTs (R$ 9.040,00) — OS Delivery: 3.487,25 USTs (R$ 557.960,00) — Total: 3.543,75 USTs — R$ 567.000,00',
    saude:'verde',saude_obs:'Especificação concluída — Documento de Visão entregue; em fase de desenvolvimento (Sprint 1)',
    escopo:[
     '<strong>Objetivo central:</strong> substituir o módulo interno de contratos do FIPLAN por integração bidirecional com o SIAG-C (Sistema de Gestão de Contratos da SEPLAG-MT), tornando o SIAG a única fonte de verdade para dados contratuais e o FIPLAN responsável pelas regras contábeis e geração de documentos.',
@@ -1967,7 +1960,7 @@ function toggleMod(btn){
 const navLinks = document.querySelectorAll('.header-nav a');
 window.addEventListener('scroll',()=>{
   let cur='';
-  ['kpis','semaforo-programa','situacao-atual','cronograma','oportunidades'].forEach(id=>{
+  ['kpis','semaforo-programa','situacao-atual','cronograma','mitigacao'].forEach(id=>{
     const el=document.getElementById(id);
     if(el && window.scrollY>=el.offsetTop-80) cur=id;
   });
@@ -2025,332 +2018,38 @@ function togglePexTech(btn){
 .frente-title{font-size:13px;font-weight:700;color:var(--navy);margin-bottom:5px;line-height:1.3}
 .frente-desc{font-size:12px;color:var(--gray-600);line-height:1.55}
 </style>
-<section class="section" id="oportunidades" style="padding-top:40px;padding-bottom:48px">
-
-  <!-- cabeçalho da seção -->
-  <div class="sec-title">
-    <span class="ic">
-      <svg width="18" height="18" fill="none" stroke="#fff" stroke-width="2" viewBox="0 0 24 24">
-        <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
-      </svg>
-    </span>
-    Oportunidades de Investimento e Atuação no FIPLAN
+<section class="section" id="mitigacao" style="padding-top:40px;padding-bottom:48px">
+  <div class="sec-title"><span class="ic"><svg width="18" height="18" fill="none" stroke="#fff" stroke-width="2" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></span> Plano de Mitigação</div>
+  <p class="sec-sub">Ações para recuperar o cronograma das Ondas 1 e 2 e sustentar o modelo de execução por ondas com múltiplas frentes simultâneas.</p>
+  <div style="background:var(--green-soft);border:1px solid var(--green);border-left:4px solid var(--green);border-radius:10px;padding:16px 20px;margin-bottom:26px;line-height:1.65;font-size:13px;color:var(--text)">
+    <strong style="color:var(--green);font-size:14px">Reforço da equipe para acelerar a paralelização</strong><br>
+    Como principal ação de mitigação frente aos atrasos observados nas Ondas 1 e 2, a <strong>EloGroup ampliou a equipe alocada ao programa</strong>, reforçando tanto as frentes de desenvolvimento quanto as de negócio. O aumento de capacidade permite <strong>paralelizar a execução dos subprojetos</strong>, reduzindo a dependência de caminhos sequenciais e acelerando a recuperação do cronograma. Com o time ampliado, cada subprojeto passa a contar com uma <strong>célula dedicada</strong> — desenvolvimento e negócio, com apoio transversal de arquitetura —, mitigando os riscos de indefinição de escopo (Onda 2) e de infraestrutura de homologação (Onda 1), e mantendo a cadência das ondas com entregas simultâneas.
   </div>
-  <p class="sec-sub">Eixos estratégicos identificados pelo Programa P3.2 e oportunidades mapeadas pelo Diagnóstico Técnico MTI/SEFAZ-MT v1.0 — base para planejamento de frentes complementares ao roadmap de ondas.</p>
-
-  <!-- banner diagnóstico -->
-  <div style="background:linear-gradient(135deg,var(--navy) 0%,#1A4A9A 100%);border-radius:10px;padding:18px 24px;margin-bottom:28px;display:flex;align-items:flex-start;gap:16px">
-    <div style="font-size:26px;flex-shrink:0;margin-top:2px">🔭</div>
-    <div>
-      <div style="color:#FFD98A;font-size:12px;font-weight:800;text-transform:uppercase;letter-spacing:.6px;margin-bottom:5px">Base diagnóstica — MTI/SEFAZ-MT v1.0</div>
-      <p style="color:rgba(255,255,255,.85);font-size:12.5px;line-height:1.65;margin:0">
-        <strong style="color:#FFD98A">7.399 classes Java · 4 arquivos de teste · 4 god-classes acima de 118 KB</strong> (EMP 215 KB, NOB 332 KB, LIQ 118 KB, PDD 1.660+ linhas) · front-end em <strong style="color:#FFD98A">Struts 1.2.4 EOL desde 2013</strong> · 15 regras de negócio em triggers Oracle · ControladorSaldos como singleton de estado em cluster · stack Java 1.8 + Hibernate 2.1.7c sem suporte ativo · <strong style="color:#FFD98A">120 classes dependendo do ControladorSaldos</strong> · credenciais em código-fonte. O diagnóstico produziu <strong style="color:#FFD98A">28 oportunidades</strong> em 3 categorias (processo/arquitetura, tecnológicas e IA), sintetizadas abaixo.
-      </p>
-    </div>
-  </div>
-
-  <!-- ── 6 FRENTES ESTRATÉGICAS ── -->
-  <div style="font-size:13px;font-weight:800;color:var(--navy);text-transform:uppercase;letter-spacing:.5px;margin-bottom:14px;display:flex;align-items:center;gap:8px">
-    <span style="width:4px;height:18px;background:var(--navy);border-radius:2px;display:inline-block"></span>
-    6 Frentes Estratégicas do Programa P3.2
-  </div>
-  <div class="frentes-grid">
-    <div class="frente-card" style="border-left-color:#1B2D7A">
-      <div class="frente-icon" style="background:var(--navy-light)">🖥️</div>
-      <div class="frente-body">
-        <div class="frente-num">Frente 1</div>
-        <div class="frente-title">Modernização do Front-End</div>
-        <div class="frente-desc">Refatoração de componentes legados (Struts 1.2.4 / JSPs) e migração para framework moderno com componentização reutilizável e design system responsivo.</div>
+  <div style="background:var(--gray-50);border:1px solid var(--gray-200);border-radius:12px;padding:24px 20px 26px">
+    <div style="font-size:13px;font-weight:800;color:var(--navy);text-transform:uppercase;letter-spacing:.5px;text-align:center;margin-bottom:18px">Organograma do Time — Programa FIPLAN</div>
+    <div style="background:linear-gradient(135deg,var(--navy) 0%,#2040A0 100%);color:#fff;border-radius:10px;box-shadow:var(--shadow-md);padding:13px 18px;text-align:center;max-width:280px;margin:0 auto"><div style="font-weight:800;font-size:15px;letter-spacing:.2px">Ademir Ribeiro</div><div style="font-size:11.5px;color:#FFD98A;font-weight:600;margin-top:1px">Gerente Sênior</div><div style="font-size:9.5px;color:rgba(255,255,255,.7);margin-top:4px">Governança do programa</div></div>
+    <div style="width:2px;height:20px;background:var(--gray-300,#9AAABF);margin:0 auto"></div>
+    <div style="display:flex;gap:20px;justify-content:center;flex-wrap:wrap"><div style="background:#fff;border:1px solid var(--gray-200);border-top:4px solid #1B2D7A;border-radius:10px;box-shadow:var(--shadow);padding:12px 16px;text-align:center;min-width:210px"><div style="font-weight:800;font-size:13.5px;color:var(--navy)">Israel Oliveira</div><div style="font-size:11px;color:#1B2D7A;font-weight:700;margin:2px 0 5px">Gerente do Projeto</div><div><span style="display:inline-block;font-size:9px;font-weight:700;padding:1px 6px;border-radius:10px;margin:2px 2px 0 0;background:#E6F5EE;color:#1A7A4A">SISPAT</span><span style="display:inline-block;font-size:9px;font-weight:700;padding:1px 6px;border-radius:10px;margin:2px 2px 0 0;background:#F0EAF9;color:#6B3FA0">SolAut</span><span style="display:inline-block;font-size:9px;font-weight:700;padding:1px 6px;border-radius:10px;margin:2px 2px 0 0;background:#E8EDFA;color:#1B2D7A">SIAG-C/Subel./Aquis.</span></div></div><div style="background:#fff;border:1px solid var(--gray-200);border-top:4px solid #6B3FA0;border-radius:10px;box-shadow:var(--shadow);padding:12px 16px;text-align:center;min-width:210px"><div style="font-weight:800;font-size:13.5px;color:var(--navy)">Eduardo Hipólito</div><div style="font-size:11px;color:#6B3FA0;font-weight:700;margin:2px 0 5px">Arquiteto de Solução</div><div><span style="font-size:9.5px;color:var(--gray-600)">Arquitetura transversal — todos os SPs</span></div></div></div>
+    <div style="border-top:1px dashed var(--gray-200);margin:22px 0 20px"></div>
+    <div style="display:grid;grid-template-columns:1fr;gap:18px">
+      <div style="background:#F4F7FC;border:1px solid #D8E2EF;border-radius:10px;padding:14px 16px">
+        <div style="font-size:12px;font-weight:800;color:var(--navy);letter-spacing:.3px;margin-bottom:10px">💻 Time de Desenvolvimento</div>
+        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(175px,1fr));gap:10px"><div style="background:#fff;border:1px solid #C8D4EA;border-left:4px solid #1B2D7A;border-radius:8px;padding:10px 12px"><div style="display:flex;align-items:center;gap:6px"><span style="font-size:13px">💻</span><div><div style="font-weight:800;font-size:12px;color:var(--navy);line-height:1.1">Giuseppe Cordeiro</div><div style="font-size:9.5px;color:var(--gray-600)">Desenvolvedor</div></div></div><div style="margin-top:5px"><span style="display:inline-block;font-size:9px;font-weight:700;padding:1px 6px;border-radius:10px;margin:2px 2px 0 0;background:#E6F5EE;color:#1A7A4A">SISPAT</span><span style="display:inline-block;font-size:9px;font-weight:700;padding:1px 6px;border-radius:10px;margin:2px 2px 0 0;background:#E8EDFA;color:#1B2D7A">SIAG-C/Subel./Aquis.</span></div></div><div style="background:#fff;border:1px solid #C8D4EA;border-left:4px solid #1B2D7A;border-radius:8px;padding:10px 12px"><div style="display:flex;align-items:center;gap:6px"><span style="font-size:13px">💻</span><div><div style="font-weight:800;font-size:12px;color:var(--navy);line-height:1.1">Daniel Orlandi</div><div style="font-size:9.5px;color:var(--gray-600)">Desenvolvedor</div></div></div><div style="margin-top:5px"><span style="display:inline-block;font-size:9px;font-weight:700;padding:1px 6px;border-radius:10px;margin:2px 2px 0 0;background:#E6F5EE;color:#1A7A4A">SISPAT</span><span style="display:inline-block;font-size:9px;font-weight:700;padding:1px 6px;border-radius:10px;margin:2px 2px 0 0;background:#E8EDFA;color:#1B2D7A">SIAG-C/Subel./Aquis.</span></div></div><div style="background:#fff;border:1px solid #C8D4EA;border-left:4px solid #1B2D7A;border-radius:8px;padding:10px 12px"><div style="display:flex;align-items:center;gap:6px"><span style="font-size:13px">💻</span><div><div style="font-weight:800;font-size:12px;color:var(--navy);line-height:1.1">Carlos Henrique</div><div style="font-size:9.5px;color:var(--gray-600)">Desenvolvedor</div></div></div><div style="margin-top:5px"><span style="display:inline-block;font-size:9px;font-weight:700;padding:1px 6px;border-radius:10px;margin:2px 2px 0 0;background:#FDF3DC;color:#B8860B">Folha</span></div></div><div style="background:#fff;border:1px solid #C8D4EA;border-left:4px solid #1B2D7A;border-radius:8px;padding:10px 12px"><div style="display:flex;align-items:center;gap:6px"><span style="font-size:13px">💻</span><div><div style="font-weight:800;font-size:12px;color:var(--navy);line-height:1.1">Thiago Fraga</div><div style="font-size:9.5px;color:var(--gray-600)">Desenvolvedor</div></div></div><div style="margin-top:5px"><span style="display:inline-block;font-size:9px;font-weight:700;padding:1px 6px;border-radius:10px;margin:2px 2px 0 0;background:#E1EEF7;color:#1A5A9A">Previsão Receitas</span></div></div><div style="background:#fff;border:1px solid #C8D4EA;border-left:4px solid #1B2D7A;border-radius:8px;padding:10px 12px"><div style="display:flex;align-items:center;gap:6px"><span style="font-size:13px">💻</span><div><div style="font-weight:800;font-size:12px;color:var(--navy);line-height:1.1">Marcos Lommez</div><div style="font-size:9.5px;color:var(--gray-600)">Desenvolvedor</div></div></div><div style="margin-top:5px"><span style="display:inline-block;font-size:9px;font-weight:700;padding:1px 6px;border-radius:10px;margin:2px 2px 0 0;background:#F0EAF9;color:#6B3FA0">SolAut</span><span style="display:inline-block;font-size:9px;font-weight:700;padding:1px 6px;border-radius:10px;margin:2px 2px 0 0;background:#FBEAF0;color:#B03060">Receita Integrada</span></div></div></div>
       </div>
-    </div>
-    <div class="frente-card" style="border-left-color:var(--amber)">
-      <div class="frente-icon" style="background:var(--amber-soft)">🔧</div>
-      <div class="frente-body">
-        <div class="frente-num">Frente 2</div>
-        <div class="frente-title">Redução e Tratamento da Dívida Técnica</div>
-        <div class="frente-desc">Decomposição das 4 god-classes, migração de regras dos triggers Oracle para camada de aplicação, eliminação de acoplamentos circulares e versionamento de código.</div>
-      </div>
-    </div>
-    <div class="frente-card" style="border-left-color:#2A7ACC">
-      <div class="frente-icon" style="background:#EEF4FF">📚</div>
-      <div class="frente-body">
-        <div class="frente-num">Frente 3</div>
-        <div class="frente-title">Documentação Funcional e Técnica</div>
-        <div class="frente-desc">Migração e atualização da documentação, incluindo casos de uso, fluxos TO-BE, diagramas de integração e manuais operacionais alinhados ao modelo v2.</div>
-      </div>
-    </div>
-    <div class="frente-card" style="border-left-color:var(--green)">
-      <div class="frente-icon" style="background:var(--green-soft)">🧪</div>
-      <div class="frente-body">
-        <div class="frente-num">Frente 4</div>
-        <div class="frente-title">Melhoria da Cobertura de Testes</div>
-        <div class="frente-desc">Suite de testes automatizados cobrindo as 52 regras de negócio mapeadas — hoje apenas 4 arquivos de teste para 7.399 classes Java.</div>
-      </div>
-    </div>
-    <div class="frente-card" style="border-left-color:var(--purple)">
-      <div class="frente-icon" style="background:var(--purple-soft)">📡</div>
-      <div class="frente-body">
-        <div class="frente-num">Frente 5</div>
-        <div class="frente-title">Monitoramento e Qualidade de Código</div>
-        <div class="frente-desc">Observabilidade plena (OTEL), análise estática (SAST/SonarQube), dashboards de governança técnica e alertas proativos substituindo monitoramento manual.</div>
-      </div>
-    </div>
-    <div class="frente-card" style="border-left-color:var(--green-mid)">
-      <div class="frente-icon" style="background:#E6F5EE">🎓</div>
-      <div class="frente-body">
-        <div class="frente-num">Frente 6</div>
-        <div class="frente-title">Transferência de Conhecimento</div>
-        <div class="frente-desc">Ações estruturadas de disseminação de competências técnicas e de negócio, redução de dependência operacional de pessoas-chave e capacitação no modelo v2.</div>
+      <div style="background:#FDF9EF;border:1px solid #E8D08A;border-radius:10px;padding:14px 16px">
+        <div style="font-size:12px;font-weight:800;color:#8A5000;letter-spacing:.3px;margin-bottom:10px">📊 Time de Negócio</div>
+        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(175px,1fr));gap:10px"><div style="background:#FDF9EF;border:1px solid #E8D08A;border-left:4px solid #B8860B;border-radius:8px;padding:10px 12px"><div style="display:flex;align-items:center;gap:6px"><span style="font-size:13px">📊</span><div><div style="font-weight:800;font-size:12px;color:#8A5000;line-height:1.1">Vitor Candido</div><div style="font-size:9.5px;color:#9A7B30">Especialista de Negócio</div></div></div><div style="margin-top:5px"><span style="display:inline-block;font-size:9px;font-weight:700;padding:1px 6px;border-radius:10px;margin:2px 2px 0 0;background:#FDF3DC;color:#B8860B">Folha</span><span style="display:inline-block;font-size:9px;font-weight:700;padding:1px 6px;border-radius:10px;margin:2px 2px 0 0;background:#E1EEF7;color:#1A5A9A">Previsão Receitas</span></div></div><div style="background:#FDF9EF;border:1px solid #E8D08A;border-left:4px solid #B8860B;border-radius:8px;padding:10px 12px"><div style="display:flex;align-items:center;gap:6px"><span style="font-size:13px">📊</span><div><div style="font-weight:800;font-size:12px;color:#8A5000;line-height:1.1">Luan Candido</div><div style="font-size:9.5px;color:#9A7B30">Analista de Negócios</div></div></div><div style="margin-top:5px"><span style="display:inline-block;font-size:9px;font-weight:700;padding:1px 6px;border-radius:10px;margin:2px 2px 0 0;background:#E8EDFA;color:#1B2D7A">SIAG-C/Subel./Aquis.</span><span style="display:inline-block;font-size:9px;font-weight:700;padding:1px 6px;border-radius:10px;margin:2px 2px 0 0;background:#FBEAF0;color:#B03060">Receita Integrada</span></div></div></div>
       </div>
     </div>
   </div>
-
-  <!-- ── OPORTUNIDADES DO DIAGNÓSTICO ── -->
-  <div style="font-size:13px;font-weight:800;color:var(--navy);text-transform:uppercase;letter-spacing:.5px;margin-bottom:14px;display:flex;align-items:center;gap:8px">
-    <span style="width:4px;height:18px;background:var(--gold);border-radius:2px;display:inline-block"></span>
-    Oportunidades Mapeadas no Diagnóstico MTI/SEFAZ-MT
+  <div style="margin-top:26px">
+    <div style="font-size:13px;font-weight:800;color:var(--navy);text-transform:uppercase;letter-spacing:.5px;margin-bottom:12px">Alocação por Subprojeto</div>
+    <div style="display:flex;gap:16px;flex-wrap:wrap;margin-bottom:12px;font-size:10.5px;color:var(--gray-600)"><span style="display:inline-flex;align-items:center;gap:5px"><span style="width:8px;height:8px;border-radius:50%;background:#1A7A4A"></span>Gestão do projeto</span><span style="display:inline-flex;align-items:center;gap:5px"><span style="width:8px;height:8px;border-radius:50%;background:#1B2D7A"></span>Desenvolvimento</span><span style="display:inline-flex;align-items:center;gap:5px"><span style="width:8px;height:8px;border-radius:50%;background:#B8860B"></span>Negócio</span></div>
+    <div style="display:grid;grid-template-columns:repeat(6,1fr);gap:10px"><div style="background:#fff;border:1px solid var(--gray-200);border-top:3px solid #1A7A4A;border-radius:10px;padding:12px 14px"><div style="display:flex;align-items:center;justify-content:space-between;gap:8px"><span style="font-weight:800;font-size:12.5px;color:#1A7A4A">SISPAT</span><span style="font-size:9px;font-weight:700;color:var(--gray-600);background:var(--gray-100);padding:2px 8px;border-radius:10px;white-space:nowrap">Onda 1</span></div><div style="margin-top:8px"><span style="display:inline-flex;align-items:center;gap:5px;font-size:10.5px;font-weight:600;color:var(--text);padding:3px 9px;border-radius:14px;margin:3px 4px 0 0;background:#fff;border:1px solid var(--gray-200)"><span style="width:7px;height:7px;border-radius:50%;background:#1A7A4A"></span>Israel Oliveira</span><span style="display:inline-flex;align-items:center;gap:5px;font-size:10.5px;font-weight:600;color:var(--text);padding:3px 9px;border-radius:14px;margin:3px 4px 0 0;background:#fff;border:1px solid var(--gray-200)"><span style="width:7px;height:7px;border-radius:50%;background:#1B2D7A"></span>Giuseppe Cordeiro</span><span style="display:inline-flex;align-items:center;gap:5px;font-size:10.5px;font-weight:600;color:var(--text);padding:3px 9px;border-radius:14px;margin:3px 4px 0 0;background:#fff;border:1px solid var(--gray-200)"><span style="width:7px;height:7px;border-radius:50%;background:#1B2D7A"></span>Daniel Orlandi</span></div></div><div style="background:#fff;border:1px solid var(--gray-200);border-top:3px solid #6B3FA0;border-radius:10px;padding:12px 14px"><div style="display:flex;align-items:center;justify-content:space-between;gap:8px"><span style="font-weight:800;font-size:12.5px;color:#6B3FA0">SolAut</span><span style="font-size:9px;font-weight:700;color:var(--gray-600);background:var(--gray-100);padding:2px 8px;border-radius:10px;white-space:nowrap">Onda 1</span></div><div style="margin-top:8px"><span style="display:inline-flex;align-items:center;gap:5px;font-size:10.5px;font-weight:600;color:var(--text);padding:3px 9px;border-radius:14px;margin:3px 4px 0 0;background:#fff;border:1px solid var(--gray-200)"><span style="width:7px;height:7px;border-radius:50%;background:#1A7A4A"></span>Israel Oliveira</span><span style="display:inline-flex;align-items:center;gap:5px;font-size:10.5px;font-weight:600;color:var(--text);padding:3px 9px;border-radius:14px;margin:3px 4px 0 0;background:#fff;border:1px solid var(--gray-200)"><span style="width:7px;height:7px;border-radius:50%;background:#1B2D7A"></span>Marcos Lommez</span></div></div><div style="background:#fff;border:1px solid var(--gray-200);border-top:3px solid #1B2D7A;border-radius:10px;padding:12px 14px"><div style="display:flex;align-items:center;justify-content:space-between;gap:8px"><span style="font-weight:800;font-size:12.5px;color:#1B2D7A">SIAG-C/Subel./Aquis.</span><span style="font-size:9px;font-weight:700;color:var(--gray-600);background:var(--gray-100);padding:2px 8px;border-radius:10px;white-space:nowrap">Onda 2</span></div><div style="margin-top:8px"><span style="display:inline-flex;align-items:center;gap:5px;font-size:10.5px;font-weight:600;color:var(--text);padding:3px 9px;border-radius:14px;margin:3px 4px 0 0;background:#fff;border:1px solid var(--gray-200)"><span style="width:7px;height:7px;border-radius:50%;background:#1A7A4A"></span>Israel Oliveira</span><span style="display:inline-flex;align-items:center;gap:5px;font-size:10.5px;font-weight:600;color:var(--text);padding:3px 9px;border-radius:14px;margin:3px 4px 0 0;background:#fff;border:1px solid var(--gray-200)"><span style="width:7px;height:7px;border-radius:50%;background:#1B2D7A"></span>Giuseppe Cordeiro</span><span style="display:inline-flex;align-items:center;gap:5px;font-size:10.5px;font-weight:600;color:var(--text);padding:3px 9px;border-radius:14px;margin:3px 4px 0 0;background:#fff;border:1px solid var(--gray-200)"><span style="width:7px;height:7px;border-radius:50%;background:#1B2D7A"></span>Daniel Orlandi</span><span style="display:inline-flex;align-items:center;gap:5px;font-size:10.5px;font-weight:600;color:var(--text);padding:3px 9px;border-radius:14px;margin:3px 4px 0 0;background:#fff;border:1px solid var(--gray-200)"><span style="width:7px;height:7px;border-radius:50%;background:#B8860B"></span>Luan Candido</span></div></div><div style="background:#fff;border:1px solid var(--gray-200);border-top:3px solid #B8860B;border-radius:10px;padding:12px 14px"><div style="display:flex;align-items:center;justify-content:space-between;gap:8px"><span style="font-weight:800;font-size:12.5px;color:#B8860B">Folha</span><span style="font-size:9px;font-weight:700;color:var(--gray-600);background:var(--gray-100);padding:2px 8px;border-radius:10px;white-space:nowrap">Onda 2</span></div><div style="margin-top:8px"><span style="display:inline-flex;align-items:center;gap:5px;font-size:10.5px;font-weight:600;color:var(--text);padding:3px 9px;border-radius:14px;margin:3px 4px 0 0;background:#fff;border:1px solid var(--gray-200)"><span style="width:7px;height:7px;border-radius:50%;background:#1B2D7A"></span>Carlos Henrique</span><span style="display:inline-flex;align-items:center;gap:5px;font-size:10.5px;font-weight:600;color:var(--text);padding:3px 9px;border-radius:14px;margin:3px 4px 0 0;background:#fff;border:1px solid var(--gray-200)"><span style="width:7px;height:7px;border-radius:50%;background:#B8860B"></span>Vitor Candido</span></div></div><div style="background:#fff;border:1px solid var(--gray-200);border-top:3px solid #1A5A9A;border-radius:10px;padding:12px 14px"><div style="display:flex;align-items:center;justify-content:space-between;gap:8px"><span style="font-weight:800;font-size:12.5px;color:#1A5A9A">Previsão Receitas</span><span style="font-size:9px;font-weight:700;color:var(--gray-600);background:var(--gray-100);padding:2px 8px;border-radius:10px;white-space:nowrap">Onda 2</span></div><div style="margin-top:8px"><span style="display:inline-flex;align-items:center;gap:5px;font-size:10.5px;font-weight:600;color:var(--text);padding:3px 9px;border-radius:14px;margin:3px 4px 0 0;background:#fff;border:1px solid var(--gray-200)"><span style="width:7px;height:7px;border-radius:50%;background:#1B2D7A"></span>Thiago Fraga</span><span style="display:inline-flex;align-items:center;gap:5px;font-size:10.5px;font-weight:600;color:var(--text);padding:3px 9px;border-radius:14px;margin:3px 4px 0 0;background:#fff;border:1px solid var(--gray-200)"><span style="width:7px;height:7px;border-radius:50%;background:#B8860B"></span>Vitor Candido</span></div></div><div style="background:#fff;border:1px solid var(--gray-200);border-top:3px solid #B03060;border-radius:10px;padding:12px 14px"><div style="display:flex;align-items:center;justify-content:space-between;gap:8px"><span style="font-weight:800;font-size:12.5px;color:#B03060">Receita Integrada</span><span style="font-size:9px;font-weight:700;color:var(--gray-600);background:var(--gray-100);padding:2px 8px;border-radius:10px;white-space:nowrap">Onda 2</span></div><div style="margin-top:8px"><span style="display:inline-flex;align-items:center;gap:5px;font-size:10.5px;font-weight:600;color:var(--text);padding:3px 9px;border-radius:14px;margin:3px 4px 0 0;background:#fff;border:1px solid var(--gray-200)"><span style="width:7px;height:7px;border-radius:50%;background:#1B2D7A"></span>Marcos Lommez</span><span style="display:inline-flex;align-items:center;gap:5px;font-size:10.5px;font-weight:600;color:var(--text);padding:3px 9px;border-radius:14px;margin:3px 4px 0 0;background:#fff;border:1px solid var(--gray-200)"><span style="width:7px;height:7px;border-radius:50%;background:#B8860B"></span>Luan Candido</span></div></div></div>
   </div>
-
-  <div style="background:#fff;border-radius:10px;box-shadow:var(--shadow-md);overflow:hidden">
-    <!-- tabs -->
-    <div style="padding:0 24px;background:#fff;border-bottom:2px solid var(--gray-100)">
-      <div class="opp-tabs">
-        <button class="opp-tab active" onclick="switchOppTab(this,'opp-processo')">🏗️ Processo &amp; Arquitetura <span style="background:var(--navy);color:#fff;border-radius:10px;font-size:9.5px;padding:1px 6px;margin-left:5px">12</span></button>
-        <button class="opp-tab" onclick="switchOppTab(this,'opp-tech')">⚙️ Tecnológicas <span style="background:var(--navy);color:#fff;border-radius:10px;font-size:9.5px;padding:1px 6px;margin-left:5px">7</span></button>
-        <button class="opp-tab" onclick="switchOppTab(this,'opp-ia')">🤖 Inteligência Artificial <span style="background:var(--navy);color:#fff;border-radius:10px;font-size:9.5px;padding:1px 6px;margin-left:5px">9</span></button>
-      </div>
-    </div>
-
-    <div style="padding:0 24px 24px">
-
-      <!-- PROCESSO & ARQUITETURA -->
-      <div class="opp-panel active" id="opp-processo">
-        <table class="opp-table">
-          <thead>
-            <tr>
-              <th style="width:26%">Oportunidade</th>
-              <th style="width:46%">Descrição &amp; Impacto</th>
-              <th style="width:14%">Módulo / Domínio</th>
-              <th style="width:14%">Prioridade</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td><strong>Decomposição do Monólito em Microsserviços</strong></td>
-              <td>Separar o WAR único (EMP.java 215 KB, NOB.java 332 KB) em serviços independentes por domínio. <em style="color:var(--green)">Redução de 70% no tempo de implantação de novas funcionalidades.</em></td>
-              <td><span style="font-size:11px;color:var(--gray-600)">Arquitetura Geral</span></td>
-              <td><span class="opp-badge high">HIGH</span></td>
-            </tr>
-            <tr>
-              <td><strong>Refatoração das God-Classes</strong></td>
-              <td>Decompor EMP.java (215 KB), NOB.java (332 KB), LIQ.java (118 KB), PDD.java (1.660+ linhas) em classes coesas. <em style="color:var(--green)">Redução de 80% no tempo de correção de bugs críticos.</em></td>
-              <td><span style="font-size:11px;color:var(--gray-600)">Execução Despesa</span></td>
-              <td><span class="opp-badge high">HIGH</span></td>
-            </tr>
-            <tr>
-              <td><strong>Eliminação do Framework Struts 1 (EOL)</strong></td>
-              <td>Migrar o front-end de Struts 1.2.4 (EOL 2013) e JSPs para framework moderno (React/Vue.js), com design system responsivo. <em style="color:var(--green)">Eliminação do risco de segurança por framework EOL.</em></td>
-              <td><span style="font-size:11px;color:var(--gray-600)">Front-End</span></td>
-              <td><span class="opp-badge high">HIGH</span></td>
-            </tr>
-            <tr>
-              <td><strong>Atualização da Stack Java/Hibernate</strong></td>
-              <td>Migrar de Java 1.8 + Hibernate 2.1.7c (ambos sem suporte) para Java 21 LTS + Spring Boot 3 + Hibernate 6, eliminando XDoclet. <em style="color:var(--green)">Patches de segurança disponíveis; redução de 60% no onboarding.</em></td>
-              <td><span style="font-size:11px;color:var(--gray-600)">Infraestrutura</span></td>
-              <td><span class="opp-badge high">HIGH</span></td>
-            </tr>
-            <tr>
-              <td><strong>Eliminação de Lógica de Negócio dos Triggers Oracle</strong></td>
-              <td>Migrar as 15 regras codificadas em triggers Oracle (ACWTG0003, ACWTG0110 etc.) para a camada de aplicação. <em style="color:var(--green)">Regras de negócio testáveis; diagnóstico de erros em segundos.</em></td>
-              <td><span style="font-size:11px;color:var(--gray-600)">Contabilidade</span></td>
-              <td><span class="opp-badge high">HIGH</span></td>
-            </tr>
-            <tr>
-              <td><strong>Arquitetura de Alta Disponibilidade para ControladorSaldos</strong></td>
-              <td>Substituir o singleton ControladorSaldos em memória (risco em cluster) por arquitetura distribuída com Redis Cluster. 120 classes dependem dele. <em style="color:var(--green)">SLA de 99,9% para operações financeiras críticas.</em></td>
-              <td><span style="font-size:11px;color:var(--gray-600)">Execução Despesa</span></td>
-              <td><span class="opp-badge high">HIGH</span></td>
-            </tr>
-            <tr>
-              <td><strong>Motor de Workflow Configurável</strong></td>
-              <td>Substituir a lógica hardcoded de aprovação de empenhos, liquidações e NOBs por motor configurável (Flowable/Camunda). <em style="color:var(--green)">Adaptação de alçadas em horas em vez de meses; auditoria completa.</em></td>
-              <td><span style="font-size:11px;color:var(--gray-600)">Governança</span></td>
-              <td><span class="opp-badge high">HIGH</span></td>
-            </tr>
-            <tr>
-              <td><strong>Modernização da Interface de Usuário (UX)</strong></td>
-              <td>Substituir JSPs de 60–128 KB por interfaces modernas com design system, formulários progressivos e validação em tempo real. <em style="color:var(--green)">Redução de 50% nos erros de preenchimento e 60% no tempo de treinamento.</em></td>
-              <td><span style="font-size:11px;color:var(--gray-600)">Front-End</span></td>
-              <td><span class="opp-badge high">HIGH</span></td>
-            </tr>
-            <tr>
-              <td><strong>Implementação de Testes Automatizados</strong></td>
-              <td>Criar suite cobrindo as 52 regras de negócio mapeadas, priorizando ControladorSaldos, bloqueio de liquidação duplicada (ACWTG0110) e validação de empenho. <em style="color:var(--green)">Diagnóstico de erros em segundos; evolução independente do banco.</em></td>
-              <td><span style="font-size:11px;color:var(--gray-600)">Qualidade / Testes</span></td>
-              <td><span class="opp-badge high">HIGH</span></td>
-            </tr>
-            <tr>
-              <td><strong>Eliminação do Versionamento Anual de Código</strong></td>
-              <td>Substituir o padrão de cópia de arquivos com sufixo de ano (EMP_2012, NOB_2020) por versionamento Git com branches e tags de release. <em style="color:var(--green)">Eliminação de código morto; clareza sobre a versão ativa de cada funcionalidade.</em></td>
-              <td><span style="font-size:11px;color:var(--gray-600)">DevOps</span></td>
-              <td><span class="opp-badge medium">MÉDIO</span></td>
-            </tr>
-            <tr>
-              <td><strong>Substituição do Stimulsoft Reports</strong></td>
-              <td>Substituir Stimulsoft Reports 2013 (sem suporte ativo) por solução moderna de BI (Apache Superset, Metabase ou Power BI Embedded). <em style="color:var(--green)">Relatórios LRF em menos de 2 minutos; dashboards interativos em tempo real.</em></td>
-              <td><span style="font-size:11px;color:var(--gray-600)">Relatórios / LRF</span></td>
-              <td><span class="opp-badge high">HIGH</span></td>
-            </tr>
-            <tr>
-              <td><strong>Sistema de Alertas e Notificações Proativas</strong></td>
-              <td>Notificações automáticas (e-mail/SMS/push) para: vencimento de contratos, RAPs próximos ao cancelamento, adiantamentos com prazo. <em style="color:var(--green)">Eliminação de 90% dos bloqueios de pagamento por vencimento silencioso.</em></td>
-              <td><span style="font-size:11px;color:var(--gray-600)">Governança / Controle</span></td>
-              <td><span class="opp-badge medium">MÉDIO</span></td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-
-      <!-- TECNOLÓGICAS -->
-      <div class="opp-panel" id="opp-tech">
-        <table class="opp-table">
-          <thead>
-            <tr>
-              <th style="width:26%">Oportunidade</th>
-              <th style="width:46%">Descrição &amp; Impacto</th>
-              <th style="width:14%">Domínio</th>
-              <th style="width:14%">Prioridade</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td><strong>Modernização da Integração com o Mainframe (EntireX → API Gateway)</strong></td>
-              <td>Substituir o protocolo proprietário EntireX 7.1.1 (Software AG) para extração de dados de folha do SEAP/Mainframe por API REST padronizada com circuit breaker. <em style="color:var(--green)">Elimina risco de paralisação total da folha de pessoal; reduz custo de licença EntireX.</em></td>
-              <td><span style="font-size:11px;color:var(--gray-600)">Integrações / Folha</span></td>
-              <td><span class="opp-badge high">HIGH</span></td>
-            </tr>
-            <tr>
-              <td><strong>Automação da Conciliação Bancária com Motor de Reconciliação</strong></td>
-              <td>Modernizar ConciliacaoBancaria.java (4.000+ linhas) com motor de reconciliação automática por matching fuzzy, eliminando intervenção manual. <em style="color:var(--green)">Redução de 80% no tempo de conciliação mensal; equipe contábil liberada para análises de maior valor.</em></td>
-              <td><span style="font-size:11px;color:var(--gray-600)">Contabilidade</span></td>
-              <td><span class="opp-badge high">HIGH</span></td>
-            </tr>
-            <tr>
-              <td><strong>Integração PIX para Pagamentos do Tesouro</strong></td>
-              <td>Integrar ao sistema PIX do Banco Central via API DICT para emissão de NOBs com liquidação instantânea, substituindo TEDs com prazo D+1. <em style="color:var(--green)">Pagamentos críticos liquidados instantaneamente; redução de multas por atraso em contratos.</em></td>
-              <td><span style="font-size:11px;color:var(--gray-600)">Execução Despesa</span></td>
-              <td><span class="opp-badge high">HIGH</span></td>
-            </tr>
-            <tr>
-              <td><strong>Migração do Oracle para PostgreSQL</strong></td>
-              <td>Migrar ~380 tabelas, 15 triggers, 3 stored procedures e PL/SQL do Oracle 12c para PostgreSQL (open-source), eliminando lock-in de vendor. <em style="color:var(--green)">Redução de 60–70% no custo de licenciamento de banco de dados; menor custo de profissionais DBA.</em></td>
-              <td><span style="font-size:11px;color:var(--gray-600)">Infraestrutura / BD</span></td>
-              <td><span class="opp-badge high">HIGH</span></td>
-            </tr>
-            <tr>
-              <td><strong>Dashboard Executivo Financeiro em Tempo Real</strong></td>
-              <td>Painel executivo para o Secretário de Fazenda com saldo do Tesouro, execução por secretaria, programação financeira diária e arrecadação acumulada em tempo real. <em style="color:var(--green)">Detecção de risco de descoberto do Tesouro com 48h de antecedência.</em></td>
-              <td><span style="font-size:11px;color:var(--gray-600)">Gestão / BI</span></td>
-              <td><span class="opp-badge high">HIGH</span></td>
-            </tr>
-            <tr>
-              <td><strong>Planejamento Orçamentário com Simulador de Cenários</strong></td>
-              <td>Módulo de simulação que permite ao gestor da SEPLAN projetar impactos de diferentes arrecadações, contingenciamentos e remanejamentos antes de aprovar a LOA. <em style="color:var(--green)">LOA mais aderente à realidade; redução de créditos adicionais por erro de previsão.</em></td>
-              <td><span style="font-size:11px;color:var(--gray-600)">Planejamento</span></td>
-              <td><span class="opp-badge high">HIGH</span></td>
-            </tr>
-            <tr>
-              <td><strong>Portal de Autoatendimento do Credor/Fornecedor</strong></td>
-              <td>Portal web para credores consultarem situação de pagamentos, notas de empenho/liquidação e notificarem atualização de dados bancários. <em style="color:var(--green)">Redução de 80% nas consultas de fornecedores às secretarias; eliminação de NOBs rejeitadas por dados desatualizados.</em></td>
-              <td><span style="font-size:11px;color:var(--gray-600)">Atendimento</span></td>
-              <td><span class="opp-badge medium">MÉDIO</span></td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-
-      <!-- IA -->
-      <div class="opp-panel" id="opp-ia">
-        <div style="background:var(--navy-light);border:1px solid #C5D5F0;border-left:4px solid var(--navy);border-radius:8px;padding:10px 14px;margin-bottom:16px;font-size:12px;color:var(--navy)">
-          <strong>Nota:</strong> As oportunidades de IA abaixo são frentes de alto valor identificadas no diagnóstico. Sua inclusão no roadmap requer priorização formal e definição de escopo com a equipe técnica e gestores da SEFAZ-MT.
-        </div>
-        <table class="opp-table">
-          <thead>
-            <tr>
-              <th style="width:26%">Agente / Solução</th>
-              <th style="width:54%">Descrição &amp; Impacto Estimado</th>
-              <th style="width:20%">Prioridade Diagnóstico</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td><strong>Assistente de Emissão de Empenho</strong></td>
-              <td>IA que guia o servidor no preenchimento do empenho, detecta erros antes da submissão (classificação incorreta, credor sem habilitação). <em style="color:var(--green)">Redução de 70% nos chamados de suporte; −75% no tempo médio de emissão (20 min → 5 min).</em></td>
-              <td><span class="opp-badge high">HIGH</span></td>
-            </tr>
-            <tr>
-              <td><strong>Detector de Anomalias Financeiras</strong></td>
-              <td>Monitoramento contínuo de empenhos, liquidações e pagamentos em busca de padrões anômalos — valores atípicos, beneficiários duplicados, padrões de fraude. <em style="color:var(--green)">Detecção antecipada de irregularidades; potencial economia de R$ milhões em achados de auditoria.</em></td>
-              <td><span class="opp-badge high">HIGH</span></td>
-            </tr>
-            <tr>
-              <td><strong>Assistente de Conciliação Bancária</strong></td>
-              <td>Resolve automaticamente divergências de conciliação aplicando matching fuzzy para lançamentos com pequenas variações de valor. <em style="color:var(--green)">Redução de 80% no tempo de conciliação; conciliação diária em vez de mensal.</em></td>
-              <td><span class="opp-badge high">HIGH</span></td>
-            </tr>
-            <tr>
-              <td><strong>Classificador Orçamentário Automático</strong></td>
-              <td>Analisa a descrição do objeto de despesa e sugere automaticamente a classificação orçamentária completa (programa/ação/natureza). <em style="color:var(--green)">Redução de 90% nos erros de classificação; eliminação de OSBDs de correção.</em></td>
-              <td><span class="opp-badge high">HIGH</span></td>
-            </tr>
-            <tr>
-              <td><strong>Previsão de Necessidade de Contingenciamento</strong></td>
-              <td>Analisa tendência de arrecadação mensal e execução orçamentária acumulada para antecipar cenários de insuficiência de caixa. <em style="color:var(--green)">Decisões de contingenciamento com 30–60 dias de antecedência; ajuste gradual em vez de cortes abruptos.</em></td>
-              <td><span class="opp-badge high">HIGH</span></td>
-            </tr>
-            <tr>
-              <td><strong>Assistente de Elaboração Orçamentária</strong></td>
-              <td>Apoia secretarias na elaboração da proposta para a LOA, sugerindo metas realistas baseadas na execução histórica e identificando inconsistências. <em style="color:var(--green)">Redução de 50% no volume de créditos adicionais por erro de previsão; LOA mais aderente à realidade.</em></td>
-              <td><span class="opp-badge high">HIGH</span></td>
-            </tr>
-            <tr>
-              <td><strong>Monitor de Prazos Legais e Obrigações</strong></td>
-              <td>Monitora todos os prazos legais do ciclo orçamentário e fiscal: envio RREO/RGF ao SICONFI, prestação de contas ao TCE-MT, inscrição de RAP etc. <em style="color:var(--green)">Cumprimento de 100% dos prazos legais; eliminação de multas e penalidades por atraso.</em></td>
-              <td><span class="opp-badge medium">MÉDIO</span></td>
-            </tr>
-            <tr>
-              <td><strong>Suporte Inteligente ao Usuário (Help Desk de Negócio)</strong></td>
-              <td>Agente conversacional treinado nas 52 regras de negócio, 27 processos e manuais do FIPLAN que responde dúvidas dos servidores 24h. <em style="color:var(--green)">Redução de 60% no volume de chamados de suporte; aceleração do onboarding de novos servidores.</em></td>
-              <td><span class="opp-badge medium">MÉDIO</span></td>
-            </tr>
-            <tr>
-              <td><strong>Análise de Viabilidade de Restos a Pagar (RAP)</strong></td>
-              <td>Analisa automaticamente os empenhos candidatos à inscrição de RAP ao final do exercício, classificando-os por elegibilidade e risco. <em style="color:var(--green)">Eliminação de ressalvas do TCE-MT por classificação incorreta; redução de 90% do trabalho manual de inscrição.</em></td>
-              <td><span class="opp-badge medium">MÉDIO</span></td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-
-    </div><!-- /padding wrapper -->
-  </div><!-- /card -->
-
-  <!-- nota de rodapé -->
-  <div style="margin-top:20px;background:var(--gold-light);border:1px solid #E8C870;border-left:4px solid var(--gold);border-radius:8px;padding:12px 18px;font-size:12px;color:#7A5000;line-height:1.6">
-    <strong>Fontes:</strong> (i) Programa P3.2 — Evolução do FIPLAN — 6 frentes estratégicas identificadas pela equipe do programa; (ii) <em>Diagnóstico Técnico MTI/SEFAZ-MT v1.0</em> — 28 oportunidades mapeadas em 3 categorias (processo &amp; arquitetura, tecnológicas e inteligência artificial), derivadas da análise de 7.399 classes Java, 380 tabelas Oracle, 27 processos de negócio e 11 módulos funcionais. A priorização e dimensionamento devem ser conduzidos em alinhamento com as ondas programadas e o saldo contratual disponível (R$ 2,4M — 15% do escopo EloGroup).
-  </div>
-
 </section>
 <div style="height:16px"></div>
 
-<script>
-function switchOppTab(btn, panelId) {
-  btn.closest('.opp-tabs').querySelectorAll('.opp-tab').forEach(b => b.classList.remove('active'));
-  document.querySelectorAll('.opp-panel').forEach(p => p.classList.remove('active'));
-  btn.classList.add('active');
-  document.getElementById(panelId).classList.add('active');
-}
-</script>
 
 <!-- ══ FOOTER ══ -->
 <footer style="background:#fff;margin-top:60px;padding:28px 40px;border-top:3px solid var(--gold);box-shadow:0 -2px 12px rgba(27,45,122,.07)">
